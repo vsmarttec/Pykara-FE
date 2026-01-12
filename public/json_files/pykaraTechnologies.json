@@ -1,0 +1,97 @@
+[
+    {
+        "id": "py-trade",
+        "title": "Py-Trade",
+        "headline": "An AI-Powered Trading Intelligence",
+        "summary": "Py-Trade helps investors and analysts make smarter, data-based decisions by combining technical analysis, fundamental signals, and real-time news sentiment in one dashboard.",
+        "description": "Using indicator-based predictive models, Py-Trade analyses price movements, detects trend reversals, and suggests entry, target, and stop-loss levels for short-term and swing trading. It supports multi-market watchlists, explainable signals, optional real-time alerts, and a secure data pipeline with validation through back-tests and paper trades. Risk controls and API integrations support secure deployment at scale.",
+        "keyCapabilities": [
+            "Unified dashboard combining technical, fundamental, and news-sentiment data.",
+            "AI-guided entries, targets, and stop-losses for short-term and swing trading.",
+            "Multi-market watchlists with fast screening and drill-downs.",
+            "Explainable signals with the data and logic behind each suggestion.",
+            "Real-time alerts for entries, exits, and risk thresholds (optional).",
+            "Clean data pipeline: trusted sources, normalisation, outlier removal, fast retrieval.",
+            "Back-testing and paper trades to validate models before live use.",
+            "Configurable risk controls: position sizing, stop-loss templates, portfolio limits.",
+            "Performance tracking & audits to monitor accuracy over time.",
+            "Secure, scalable deployment with API access for integration."
+        ],
+        "image": {
+            "src": "/assets/py-trade-3.jpg",
+            "alt": "Py-Trade product image"
+        }
+    },
+    {
+        "id": "py-learn",
+        "title": "Py-Learn",
+        "headline": "An AI-enhanced language learning for schools",
+        "summary": "Py-Learn is an interactive, AI-driven tutor for language skills aligned to the school syllabus, supporting grammar, reading, listening, speaking, and writing.",
+        "description": "Py-Learn adapts to each student by evaluating every response and unlocking the next level at the right difficulty. It supports topic drill-down across modules with clear navigation. Teacher features include real voice narration and optional tutor video inside activities. It is privacy-first (GDPR-ready), supports SSO and LMS/MIS integration, and can run in cloud or on-premise environments.",
+        "keyCapabilities": [
+            "AI-driven lessons across grammar, reading, listening, speaking, and writing.",
+            "Adaptive progression—next questions and tasks adjust to current skill and recent answers.",
+            "Subject drill-down across modules—enter a topic, explore deeper sub-topics, return to the main list easily.",
+            "Pronunciation coach with real-time feedback using speech recognition.",
+            "Personalised practice with spaced review for long-term retention.",
+            "Teacher dashboards with progress, common errors, and recommended actions.",
+            "Teacher voice playback available across modules (on/off).",
+            "Tutor video inside activities—teacher avatar explains answers (on/off).",
+            "Syllabus lock by default; polite denial of off-syllabus queries; admin override available.",
+            "Homework mode and classroom mode for flexible use.",
+            "Integration-ready via APIs; export to LMS/MIS; SSO options.",
+            "Privacy & security: GDPR-ready, encryption, and role-based access.",
+            "Multi-language roadmap (European languages) with reusable models."
+        ],
+        "image": {
+            "src": "/assets/pylearn.png",
+            "alt": "Py-Learn product image"
+        }
+    },
+    {
+        "id": "py-match",
+        "title": "Py-Match",
+        "headline": "An AI-based personality and compatibility analysis",
+        "summary": "Py-Match evaluates how people think, communicate, and work using the Brain-Colour model (Red, Blue, Green, Yellow) with modern NLP for matching and role fit.",
+        "description": "Py-Match supports Marriage/Dating, Hiring/Role Fit, and Business Partnerships. Users provide a profile and preferences, then answer an adaptive set of scenario questions. The system produces a colour-based profile, compatibility scores, reasons, likely friction points, and practical suggestions. It generates shareable PDF reports and includes privacy and ethics guardrails with GDPR-ready security controls.",
+        "keyCapabilities": [
+            "Use-case modes: Marriage/Dating, Hiring/Role Fit, Business Partnerships.",
+            "Profile + preferences intake: personal details and expectations captured once.",
+            "Adaptive questionnaire: 20–40 scenario questions tailored to the user and context.",
+            "Colour profile output: Red/Blue/Green/Yellow percentages with trait summaries.",
+            "Compatibility scoring: strengths, risk areas, and alignment heatmap.",
+            "Actionable advice: coaching tips and adjustments for both sides.",
+            "Role templates (hiring): map profiles to job competencies; shortlist candidates.",
+            "Multi-candidate ranking: compare and filter potential matches quickly.",
+            "Shareable reports: concise PDF with score, rationale, and next steps.",
+            "Privacy & integration: GDPR-ready, SSO options, CSV/API import for organisations."
+        ],
+        "image": {
+            "src": "/assets/py-match.png",
+            "alt": "Py-Match product image"
+        }
+    },
+    {
+        "id": "py-detect",
+        "title": "Py-Detect",
+        "headline": "An AI-assisted truth and behaviour analysis",
+        "summary": "Py-Detect supports structured interviews by combining speech analysis, language understanding, and body-language signals to highlight moments that may need follow-up.",
+        "description": "Py-Detect can import case details and suspect profiles, generate an adaptive question plan, and provide real-time indicators with timestamps during interviews. After the session, it produces a report with scored indicators, clips, and explanations. It is designed for decision support with human review, audit trails, encryption, role-based access, and GDPR-ready processing. It can run in secure cloud or on-premise setups and integrate via APIs.",
+        "keyCapabilities": [
+            "Adaptive interview engine – context-aware questions based on case data and prior answers.",
+            "Multimodal analysis – voice tone, wording, timing, and body-language cues from video.",
+            "Real-time indicators – live flags and timestamps of moments that merit follow-up.",
+            "Post-session reports – scored indicators with explanations, clips, and transcript highlights.",
+            "Case & evidence management – attach documents, chain-of-custody logs, and reviewer notes.",
+            "Calibration & benchmarks – session baselines and quality checks to reduce false signals.",
+            "Reviewer workflow – second-opinion review, redaction, and approval steps.",
+            "Integrations & export – API, PDF/CSV/MP4 export; SSO for secure access.",
+            "Security & compliance – encryption in transit/at rest, role-based access, GDPR-ready.",
+            "Ethical guardrails – human-in-the-loop by design; the system supports decisions and never replaces them."
+        ],
+        "image": {
+            "src": "/assets/pydetect-2.png",
+            "alt": "Py-Detect product image"
+        }
+    }
+]

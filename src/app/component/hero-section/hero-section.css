@@ -1,0 +1,230 @@
+/* Brand color variables */
+
+:root {
+    --pykara-blue: #4F7DB8;
+    --pykara-red: #FF3B3F;
+}
+
+/* Brand color utility classes */
+.pykara-blue {
+    color: var(--pykara-blue);
+}
+
+.pykara-red {
+    color: var(--pykara-red);
+}
+
+.pykara-blue-bg {
+    background: linear-gradient(135deg, var(--pykara-blue), #3A5C9C);
+}
+
+.pykara-red-bg {
+    background: linear-gradient(135deg, var(--pykara-red), #E63946);
+}
+
+.pykara-border {
+    border-color: rgba(79, 125, 184, 0.3);
+}
+
+/* Pykara gradient text */
+.pykara-gradient {
+    background: linear-gradient(90deg,
+            #4F7DB8 0%,
+            #6B8DC9 25%,
+            #FF3B3F 50%,
+            #FF6B6F 75%,
+            #4F7DB8 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Custom animations */
+@keyframes gradient {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+@keyframes float-delayed {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes pulse-slow {
+
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes sparkle {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+/* Animation classes */
+.animate-gradient {
+    animation: gradient 3s ease-in-out infinite;
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float-delayed 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+/* Button hover effects */
+.hover-glow:hover {
+    box-shadow: 0 0 20px rgba(79, 125, 184, 0.5);
+}
+
+/* Stats card hover effect */
+.stats-card {
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(79, 125, 184, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-4xl {
+        font-size: 2.5rem !important;
+    }
+
+    .text-6xl {
+        font-size: 3rem !important;
+    }
+
+    .text-2xl {
+        font-size: 1.25rem !important;
+    }
+
+    .flex-wrap>div {
+        flex: 1 0 40%;
+        margin-bottom: 1rem;
+    }
+
+    .px-8 {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .py-4 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+}
+
+.gradient-btns-outline {
+    position: relative;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    background: transparent;
+    border-radius: 9999px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid;
+
+    /* Gradient border only */
+    /* background-image:
+        linear-gradient(transparent, transparent),
+        linear-gradient(120deg, #4F7DB8, #FF3B3F, #4F7DB8); */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-size: 300% 300%;
+
+    transition: all 0.35s ease;
+    animation: gradientMove 6s ease infinite;
+}
+
+/* Hover → fill appears inside */
+.gradient-btns-outline:hover {
+    background-image:
+        linear-gradient(120deg, #4F7DB8, #FF3B3F, #4F7DB8),
+        linear-gradient(120deg, #4F7DB8, #FF3B3F, #4F7DB8);
+    color: #ffffff;
+    transform: translateY(-2px) scale(1.03);
+    /* box-shadow: 0 16px 40px rgba(34, 211, 238, 0.4); */
+}
+
+/* Click */
+.gradient-btns-outline:active {
+    transform: scale(0.97);
+}

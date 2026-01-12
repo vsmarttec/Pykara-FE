@@ -1,0 +1,50 @@
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">AI <span class="gradient-text">Capabilities</span> </h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Specialized AI solutions designed for practical business
+                applications</p>
+        </div>
+
+        <!-- Capabilities Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div *ngFor="let capability of capabilities"
+                class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+
+                <!-- Icon -->
+                <div
+                    class="w-16 h-16 {{ capability.bgColor }} rounded-xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+                    <lucide-icon [name]="capability.icon" [size]="32" [class]="capability.color"></lucide-icon>
+                </div>
+
+                <!-- Content -->
+                <h3 class="text-xl font-bold text-gray-900 mb-4">{{ capability.title }}</h3>
+                <p class="text-gray-600 mb-6">{{ capability.description }}</p>
+
+                <!-- Applications -->
+                <div class="pt-6 border-t border-gray-100">
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 {{ capability.bgColor }} {{ capability.color.replace('text-', 'text-') }} rounded-full text-xs font-medium">
+                            Enterprise
+                        </span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">
+                            Scalable
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Integration Note -->
+        <div class="mt-12 text-center">
+            <div
+                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
+                <lucide-icon [name]="zap" [size]="20" class="text-blue-600 mr-3"></lucide-icon>
+                <span class="text-gray-700">All capabilities can be integrated with existing systems and
+                    workflows</span>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,52 @@
+<div class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header Section -->
+    <div class="text-center mb-16">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Why Choose <span class="gradient-text">Pykara</span> </h1>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-6">{{ subtitle }}</p>
+      <p class="text-lg text-blue-300 italic max-w-2xl mx-auto">{{ goal }}</p>
+    </div>
+
+    <!-- Reasons Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <div *ngFor="let reason of reasons"
+        class="bg-gray-800 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 hover:transform hover:-translate-y-2 border border-gray-700">
+
+        <!-- Icon Section -->
+        <div class="flex items-center mb-6">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center {{ reason.color.split(' ')[0] }}">
+            <span class="text-2xl">{{ reason.icon }}</span>
+          </div>
+          <div class="ml-4">
+            <div class="w-8 h-1 rounded-full {{ reason.color.split(' ')[1] }} mb-2"></div>
+            <h3 class="text-xl font-bold">{{ reason.title }}</h3>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <p class="text-gray-300">{{ reason.description }}</p>
+
+        <!-- Decorative Element -->
+        <div class="mt-6 flex justify-end">
+          <div
+            class="w-8 h-8 rounded-full {{ reason.color.split(' ')[0] }} flex items-center justify-center opacity-50">
+            <span class="text-sm">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Principles Section -->
+    <div class="bg-gradient-to-r from-blue-900/30 to-indigo-900/30 rounded-2xl p-8 border border-blue-800/30">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-2xl font-bold text-center mb-8">Our Development Principles</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div *ngFor="let principle of principles; let i = index" class="text-center p-4">
+            <div class="text-2xl mb-2">{{ ['❶','❷','❸','❹','❺'][i] }}</div>
+            <p class="text-gray-300 text-sm">{{ principle }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

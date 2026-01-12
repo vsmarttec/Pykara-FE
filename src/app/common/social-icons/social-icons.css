@@ -1,0 +1,108 @@
+.social-container {
+    opacity: 0;
+    transform: translateX(20px) scale(0.9);
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.social-container.active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    pointer-events: auto;
+    animation: bounceInRight 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Rotate animation for toggle button */
+.rotate-180 {
+    transform: scaleX(120);
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn:hover {
+    transform: scale(1.15) translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation for social icons on click */
+.social-btn:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+}
+
+/* Overlay for click outside */
+.fixed.inset-0.z-40 {
+    background-color: transparent;
+    cursor: default;
+}
+
+/* Bounce animation */
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px) scale(0.9);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateX(-5px) scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* Animate gradient background */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animate width growth */
+@keyframes growWidth {
+
+    0%,
+    100% {
+        width: 3rem;
+    }
+
+    /* 12 in Tailwind = 3rem */
+    50% {
+        width: 4.5rem;
+    }
+
+    /* Slight grow */
+}
+
+.animate-gradient {
+    background: linear-gradient(90deg, #ff6ec4, #6B8DC9, #FF3B3F);
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+}
+
+.animate-grow {
+    animation: growWidth 1s ease-in-out infinite;
+}

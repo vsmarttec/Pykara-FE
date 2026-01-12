@@ -1,0 +1,49 @@
+<!-- Fixed Right Social Bar -->
+<div class="fixed top-1/2 right-0 -translate-y-1/2 z-50">
+    <div class="relative">
+
+        <!-- Toggle Button -->
+        <button (click)="toggleSocials()"
+            class="absolute right-0 top-60 rounded-l-3xl h-12 text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105 animate-grow  animate-gradient">
+
+            <div *ngIf="isOpen" class="">
+                <lucide-icon [name]="xIcon" class="w-5 h-5"></lucide-icon>
+            </div>
+            <div *ngIf="!isOpen">
+                <lucide-icon [name]="chevronRightIcon" class="w-5 h-5"></lucide-icon>
+            </div>
+
+        </button>
+
+
+        <!-- Social Icons -->
+        <div class="social-container mt-3 mr-3 flex flex-col gap-4 p-3
+             bg-white/60 backdrop-blur-md rounded-full shadow-lg" [class.active]="isOpen"
+            (click)="$event.stopPropagation()">
+
+            <a href="https://wa.me/919994190964?text=Welcome%20to%20PyKara%20
+        Technologies!%20How%20can%20we%20help%20you%20" target="_blank" class="social-btn" (click)="handleSocialClick()">
+                <lucide-icon [name]="messageCircleIcon" class="text-white w-5 h-5"></lucide-icon>
+            </a>
+
+            <a href="mailto:info@pykara.net" class="social-btn" (click)="handleSocialClick()">
+                <lucide-icon [name]="mailIcon" class="text-white w-5 h-5"></lucide-icon>
+            </a>
+
+            <a href="https://www.youtube.com/@PykaraTechnologies" target="_blank" class="social-btn"
+                (click)="handleSocialClick()">
+                <lucide-icon [name]="youtubeIcon" class="text-white w-5 h-5"></lucide-icon>
+            </a>
+
+            <a href="https://www.instagram.com/pykaratechnologie/" target="_blank" class="social-btn"
+                (click)="handleSocialClick()">
+                <lucide-icon [name]="instagramIcon" class="text-white w-5 h-5"></lucide-icon>
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Click outside to close area -->
+<div class="fixed inset-0 z-40" *ngIf="isOpen" (click)="closeSocials()"></div>

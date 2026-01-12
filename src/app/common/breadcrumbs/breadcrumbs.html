@@ -1,0 +1,23 @@
+<nav class="w-full py-3">
+    <ol class="flex items-center gap-2 text-sm text-gray-400">
+        <li *ngFor="let bc of breadcrumbs; let last = last" class="flex items-center gap-2">
+            <a *ngIf="!last" [routerLink]="bc.url"
+                class="flex items-center gap-2 text-black hover:text-white transition-colors">
+
+                <!-- Home icon only for Home -->
+                <lucide-icon *ngIf="bc.isHome" [img]="HomeIcon" class="w-4 h-4">
+                </lucide-icon>
+
+                <span class="text-black ">{{ bc.label }}</span>
+            </a>
+
+            <span *ngIf="last" class="flex items-center gap-2 text-white font-medium">
+                <lucide-icon *ngIf="bc.isHome" [img]="HomeIcon" class="w-4 h-4">
+                </lucide-icon>
+                <span>{{ bc.label }}</span>
+            </span>
+
+            <span *ngIf="!last" class="text-gray-500">/</span>
+        </li>
+    </ol>
+</nav>

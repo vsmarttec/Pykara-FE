@@ -1,0 +1,45 @@
+<div class="">
+
+    <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+
+        <g *ngFor="let step of steps" class="step" [style.animationDelay]="step.delay">
+
+            <!-- Flow line -->
+            <path [attr.d]="step.path" fill="none" *ngIf="step.title" [attr.stroke]="step.color" stroke-width="45"
+                class="flow-line">
+            </path>
+
+            <!-- Arrow -->
+            <!-- <path [attr.d]="step.arrow" [attr.fill]="step.color">
+            </path> -->
+
+            <!-- Card -->
+            <rect [attr.x]="step.cardX" [attr.y]="step.cardY" width="210" height="70" rx="6" fill="#f4f4f4"
+                [attr.stroke]="step.color" stroke-width="2">
+            </rect>
+
+            <!-- Circle -->
+            <circle [attr.cx]="step.circleX" [attr.cy]="step.circleY" r="40" fill="white" [attr.stroke]="step.color"
+                stroke-width="8">
+            </circle>
+
+            <!-- IMAGE LOGO -->
+            <image [attr.href]="step.logo" [attr.x]="step.circleX - 18" [attr.y]="step.circleY - 18" width="36"
+                height="36" preserveAspectRatio="xMidYMid meet">
+            </image>
+
+            <!-- Title -->
+            <text [attr.x]="step.cardX + 105" [attr.y]="step.cardY + 30" text-anchor="middle" font-size="10"
+                font-weight="bold" [attr.fill]="step.color">
+                {{ step.title }}
+            </text>
+
+            <!-- Subtitle -->
+            <text [attr.x]="step.cardX + 105" [attr.y]="step.cardY + 50" text-anchor="middle" font-size="9"
+                fill="#666">
+                {{ step.subtitle }}
+            </text>
+
+        </g>
+    </svg>
+</div>

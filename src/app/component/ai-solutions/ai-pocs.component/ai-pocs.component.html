@@ -1,0 +1,52 @@
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <div
+                class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-4">
+                <lucide-icon [name]="flaskRound" [size]="16" class="mr-2"></lucide-icon>
+                Prototype Showcase
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our  <span class="gradient-text">AI Prototypes</span></h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">{{ subtitle }}</p>
+        </div>
+
+        <!-- POC Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div *ngFor="let poc of pocs"
+                class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+
+                <!-- Tag -->
+                <div
+                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium {{ poc.bgColor }} {{ poc.color }} mb-6">
+                    {{ poc.tag }}
+                </div>
+
+                <!-- Icon and Title -->
+                <div class="flex items-center mb-6">
+                    <div
+                        class="w-14 h-14 {{ poc.bgColor }} rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                        <lucide-icon [name]="poc.icon" [size]="28" [class]="poc.color"></lucide-icon>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900"> <a [href]='poc.href'>{{ poc.title }}</a></h3>
+                        <p class="text-sm text-gray-500">{{ poc.subtitle }}</p>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-600 mb-6">{{ poc.description }}</p>
+
+               
+            </div>
+        </div>
+
+        <!-- Note -->
+        <div class="mt-12 text-center">
+            <p class="text-sm text-gray-500 italic max-w-2xl mx-auto">
+                These prototypes demonstrate our approach to AI problem-solving. Each concept focuses on practical
+                applications with clear user benefits.
+            </p>
+        </div>
+    </div>
+</section>

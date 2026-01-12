@@ -1,0 +1,262 @@
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.caption-contactus {
+    background: #f7e0d7;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 600;
+    border: 1px solid #fa956d;
+}
+
+.caption-contactus span {
+    color: red;
+    font-size: larger;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+/* Form Styles */
+input,
+select,
+textarea {
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Map Styles */
+.map-container {
+    transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.01);
+}
+
+/* Hover Effects */
+.group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+}
+
+.group:hover .group-hover\:translate-x-1 {
+    transform: translateX(4px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #2563eb, #7c3aed);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    .animate-fade-in,
+    .animate-slide-up,
+    .animate-blob,
+    .animate-pulse,
+    .animate-spin {
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        transition: none !important;
+    }
+}
+
+.gradient-btns {
+
+    position: relative;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(120deg,
+            #4F7DB8,
+            #FF3B3F,
+            #4F7DB8);
+    background-size: 300% 300%;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: gradientMove 6s ease infinite;
+    box-shadow: 0 10px 30px rgba(34, 211, 238, 0.25);
+}
+
+/* Hover */
+.gradient-btns:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(34, 211, 238, 0.4);
+}
+
+/* Click */
+.gradient-btns:active {
+    transform: scale(0.97);
+}
+
+/* Glow effect */
+.gradient-btns::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: inherit;
+    filter: blur(2px);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.gradient-btns:disabled {
+    background: linear-gradient(120deg, #9ca3af, #d1d5db, #9ca3af);
+    background-size: 100% 100%;
+    color: #f3f4f6;
+    cursor: not-allowed;
+    animation: none;
+    box-shadow: none;
+    transform: none;
+    opacity: 0.7;
+}
+
+/* Disable hover & active effects when disabled */
+.gradient-btns:disabled:hover,
+.gradient-btns:disabled:active {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Remove glow effect when disabled */
+.gradient-btns:disabled::before {
+    display: none;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

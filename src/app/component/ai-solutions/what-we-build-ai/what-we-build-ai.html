@@ -1,0 +1,40 @@
+<section class="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What We <span class="gradient-text">Build</span>  with AI</h1>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">{{ subtitle }}</p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div *ngFor="let feature of features" 
+           class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+        <!-- Icon -->
+        <div class="w-16 h-16 {{ feature.bgColor }} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+          <lucide-icon [name]="feature.icon" [size]="32" [class]="feature.color"></lucide-icon>
+        </div>
+        
+        <!-- Content -->
+        <h3 class="text-xl font-bold text-gray-900 mb-4">{{ feature.title }}</h3>
+        <p class="text-gray-600 mb-6">{{ feature.description }}</p>
+        
+        <!-- Decorative line -->
+        <div class="h-1 w-12 {{ feature.bgColor.replace('bg-', 'bg-') }} rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Principles -->
+    <div class="bg-[#dbeafe] rounded-2xl p-8 border border-gray-200">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-xl font-bold text-gray-900 text-center mb-8">Our Development Principles</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div *ngFor="let principle of principles" class="flex items-center justify-center space-x-3">
+            <lucide-icon [name]="principle.icon" [size]="24" [class]="principle.color"></lucide-icon>
+            <span class="text-gray-700">{{ principle.text }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

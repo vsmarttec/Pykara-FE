@@ -1,0 +1,185 @@
+/* ---------- Gradient Text ---------- */
+.animate-gradient {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+    background-size: 300% 300%;
+    animation: gradientShift 3s ease-in-out infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ---------- Slider ---------- */
+#sliderTrack {
+    will-change: transform;
+    user-select: none;
+}
+
+.slider-slide {
+    flex-shrink: 0;
+}
+
+/* ---------- Smooth Hover ---------- */
+.hover-card {
+    transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.swiper {
+    padding-bottom: 10px;
+}
+
+.swiper-slide {
+    user-select: none;
+}
+
+.hover-card {
+    transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.Portfolio-gradient-btn {
+    position: relative;
+    padding: 7px 20px;
+    /* font-size: 16px; */
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(120deg,
+            #4F7DB8,
+            #FF3B3F,
+            #4F7DB8);
+    background-size: 300% 300%;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: gradientMove 6s ease infinite;
+    box-shadow: 0 10px 30px rgba(34, 211, 238, 0.25);
+}
+
+/* Hover */
+.Portfolio-gradient-btn:hover {
+    border: 1px solid #FF3B3F;
+    background-color: white;
+}
+
+/* Click */
+.Portfolio-gradient-btn:active {
+    transform: scale(0.97);
+}
+
+/* Glow effect */
+.Portfolio-gradient-btn::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: inherit;
+    filter: blur(12px);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.Portfolio-gradient-btn-out {
+    position: relative;
+    padding: 7px 20px;
+    /* font-size: 16px; */
+    font-weight: 600;
+    /* color: #ffffff;  */
+    border: 1px solid #FF3B3F;
+    /* background: linear-gradient(120deg,
+            #4F7DB8,
+            #FF3B3F,
+            #4F7DB8); */
+    /* background-size: 300% 300%;
+    border: none; */
+    border-radius: 9999px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: gradientMove 6s ease infinite;
+    box-shadow: 0 10px 30px rgba(34, 211, 238, 0.25);
+}
+
+/* Hover */
+.Portfolio-gradient-btn-out:hover {
+    border: 1px solid #FF3B3F;
+    background-color: white;
+}
+
+/* Click */
+.Portfolio-gradient-btn-out:active {
+    transform: scale(0.97);
+}
+
+/* Glow effect */
+.Portfolio-gradient-btn-out::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: inherit;
+    filter: blur(12px);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.portfolio-image {
+    height: 350px;
+}
+
+.portfolio-btn-desktop {
+    display: block;
+}
+
+.portfolio-btn-mobile {
+    display: none;
+}
+
+@media (max-width : 768px) {
+    .portfolio-image {
+        height: 150px;
+    }
+
+    .portfolio-btn-desktop {
+        display: none;
+    }
+
+    .portfolio-btn-mobile {
+        display: block;
+    }
+
+}

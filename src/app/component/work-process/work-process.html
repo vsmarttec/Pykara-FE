@@ -1,0 +1,102 @@
+<section id="our-process" class="relative py-20 md:py-22 bg-white overflow-hidden">
+  
+
+    <div class="relative container mx-auto px-4 md:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-4xl mx-auto mb-16 md:mb-24 animate-fade-in">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#006780] dark:bg-white text-white dark:text-white-300 text-sm font-semibold mb-6">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                        clip-rule="evenodd" />
+                </svg>
+                Our Process
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                How We <span class="gradient-text">Work</span>
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+                Our process is designed to reduce risk and give you clear visibility at every stage
+            </p>
+        </div>
+
+        <!-- Process Steps -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+            <ng-container *ngFor="let process of workProcesses; let i = index; trackBy: trackById">
+                <div class="group animate-slide-up" [style.animation-delay]="i * 200 + 'ms'">
+
+                    <!-- Process Card -->
+                    <div
+                        class="h-full bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-3xl border border-gray-200 dark:border-gray-700/50 p-8 
+                                hover:border-blue-300 dark:hover:border-blue-500/50 transition-all duration-500 hover:shadow-2xl 
+                                hover:shadow-blue-500/10 dark:hover:shadow-blue-900/20 hover:-translate-y-2 relative overflow-hidden">
+
+                        <!-- Connector Line (Desktop only) -->
+                        <div *ngIf="i < workProcesses.length - 1"
+                            class="hidden lg:block absolute top-1/2 -right-6 w-12 h-0.5 
+                                    bg-gradient-to-r from-blue-500 to-transparent group-hover:w-16 transition-all duration-500">
+                        </div>
+
+                        <!-- Step Number -->
+
+
+                        <!-- Icon -->
+                    
+                        <div class="">
+                            <h3 class="text-sm md:text-lg font-bold text-gray-900 dark:text-white">
+                                {{ process.title }}
+                            </h3>
+                        </div>
+                        <!-- Description -->
+                        <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            {{ process.description }}
+                        </p>
+
+                        <!-- Key Features -->
+                        <div class="mb-8">
+                            <h4
+                                class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">
+                                Key Features
+                            </h4>
+                            <ul class="space-y-3">
+                                <li *ngFor="let feature of process.features"
+                                    class="flex items-start gap-3 group/feature">
+                                    <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-gray-700 dark:text-gray-300 text-sm">
+                                        {{ feature }}
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Highlight -->
+                        <div class="mt-auto pt-6 border-t border-gray-200 dark:border-gray-700/50">
+                            <div
+                                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/50">
+                                <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-sm font-medium text-blue-600 dark:text-blue-400">
+                                    {{ process.highlight }}
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Animated Border -->
+                        <div class="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-blue-300 dark:group-hover:border-blue-500/30 
+                                    transition-all duration-700 pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>

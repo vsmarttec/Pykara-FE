@@ -1,0 +1,185 @@
+.dyanmic-bg-image {
+    background-image: url('/assets/PyTrade-dy.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: calc(60vh - 20px);
+    display: grid;
+
+}
+
+.gallery-wrapper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 420px;
+
+}
+
+/* Thumbnails */
+.thumbs {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #26e666;
+    /* background: gray; */
+    /* padding: 5px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* border-radius: 50%; */
+}
+
+.thumb-list {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    height: 100%;
+    min-height: 350px;
+    overflow-y: auto;
+}
+
+.thumb {
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 4px;
+    background: #fff;
+}
+
+.thumb img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+}
+
+.thumb.active {
+    border-color: #2ecc71;
+}
+
+/* Main image */
+.main-image {
+    flex: 1;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+
+    .gallery-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Main image on top */
+    .main-image {
+        width: 100%;
+        height: 260px;
+        order: 1;
+    }
+
+    .main-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* Thumbnails at bottom */
+    .thumbs {
+        width: 100%;
+
+        flex-direction: row;
+        margin-left: 0;
+        order: 2;
+        /* padding: 10px 0; */
+
+    }
+
+    .thumb-list {
+        flex-direction: row;
+        gap: 8px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0 10px;
+        min-height: 60px;
+    }
+
+    .thumb {
+        flex: 0 0 auto;
+        width: 70px;
+    }
+
+    .thumb img {
+        height: 50px;
+    }
+
+    /* Hide up/down nav buttons on mobile */
+    .nav-btn {
+        display: none;
+    }
+}
+
+
+/* Custom animations */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom scrollbar for image gallery (if you add one) */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,47 @@
+<div class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header Section -->
+    <div class="text-center mb-16">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{{ title }}</h1>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-6">{{ subtitle }}</p>
+      <p class="text-sm text-gray-500 italic max-w-2xl mx-auto">{{ note }}</p>
+    </div>
+
+    <!-- Industries Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div *ngFor="let industry of industries" 
+           class="group relative">
+        <!-- Card Container -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full overflow-hidden border border-gray-100">
+          <!-- Gradient Top Bar -->
+          <div class="h-2 bg-gradient-to-r {{ industry.gradient }}"></div>
+          
+          <!-- Card Content -->
+          <div class="p-8">
+            <!-- Icon with Background -->
+            <div class="w-16 h-16 rounded-xl {{ industry.color }} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-3xl">{{ industry.icon }}</span>
+            </div>
+            
+            <!-- Title and Description -->
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ industry.title }}</h3>
+            <p class="text-gray-600 mb-6">{{ industry.description }}</p>
+            
+            <!-- Technologies Badges -->
+            <div class="mt-4">
+              <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 mr-2 mb-2">
+                <span class="w-2 h-2 bg-gradient-to-r {{ industry.gradient }} rounded-full mr-2"></span>
+                Technology Solutions
+              </div>
+            </div>
+          </div>
+          
+          <!-- Hover Effect Indicator -->
+          <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r {{ industry.gradient }} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        </div>
+      </div>
+    </div>
+
+  
+  </div>
+</div>

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "category": "AI & Data",
+        "items": ["OpenAI/RAG", "Vector DBs", "Speech AI", "ML Pipelines", "Prompt Management"]
+    },
+    {
+        "id": 2,
+        "category": "Web & APIs",
+        "items": ["Angular", ".NET 8", "SQL/Redis", "Auth", "Async Processing"]
+    },
+    {
+        "id": 3,
+        "category": "Cloud & DevOps",
+        "items": ["Azure Cloud", "Containers", "CI/CD", "Monitoring", "Testing"]
+    },
+    {
+        "id": 4,
+        "category": "Security",
+        "items": ["Access Control", "Compliance", "Security Controls", "Auditing"]
+    }
+]

@@ -1,0 +1,126 @@
+<section class="bg-black text-white px-6 bg-white py-16 md:px-16 overflow-hidden">
+    <div class="flex justify-between items-center mb-6">
+        <div>
+            <caption class="font-light tracking-[7px] text-xs uppercase text-black">Portfolio</caption>
+            <h4 class="font-bold text-3xl text-black/80">
+                Explore Our <span class="gradient-text">AI POC's</span>
+            </h4>
+        </div>
+
+      
+        <!-- Navigation -->
+        <div class="flex gap-2 md:gap-3 md:items-center">
+            <button #prevBtn class="swiper-btn disabled:bg-gray-500 bg-black/70 border border-white/30
+               hover:bg-white hover:text-black transition-colors
+               rounded-full w-10 h-10 flex items-center justify-center">
+                ‹
+            </button>
+
+            <button #nextBtn class="swiper-btn disabled:bg-gray-500 bg-black/70 border border-white/30
+               hover:bg-white hover:text-black transition-colors
+               rounded-full w-10 h-10 flex items-center justify-center">
+                ›
+            </button>
+            <a href="/portfolio">
+
+                <button class="Portfolio-gradient-btn hidden md:flex">
+                    View All
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide relative group" *ngFor="let p of products">
+                <!-- Image Card -->
+
+                <div class="shadow bg-white rounded-2xl ">
+
+
+                    <div class="rounded-2xl overflow-hidden bg-neutral-900   portfolio-image">
+                        <a [href]="p.href">
+
+                            <img [src]="p.image.src" [alt]="p.image.alt"
+                                class="w-full h-full object-cotain md-object-cover transition-transform duration-700 "
+                                draggable="false" />
+                        </a>
+                    </div>
+
+                    <div class="h-25 items-center flex justify-between mx-3">
+                        <div class="w-60">
+
+                            <p class="text-black font-600 font-md-bold">{{p.headline}}</p>
+                        </div>
+                        <div>
+
+                            <button class="Portfolio-gradient-btn portfolio-btn-desktop"> <a href={{p.href}}>View
+                                    Details</a></button>
+                            <a [href]="p.href" class="cursor-pointer  portfolio-btn-mobile">
+
+                                <button class="group/btn flex items-center gap-2 px-2 py-2 rounded-lg
+bg-black/50 backdrop-blur-md text-white
+hover:bg-black/70
+transition-all duration-300 cursor-pointer">
+                                    <lucide-icon [name]="info" class="w-4 h-4"></lucide-icon>
+                                    <span class="text-xs whitespace-nowrap max-w-0 overflow-hidden opacity-0
+ transition-all duration-300
+ group-hover:max-w-[80px] group-hover:opacity-100">
+                                        Details
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons (show on hover) -->
+
+
+                <!-- Overlay Buttons -->
+                <!-- Overlay Buttons -->
+                <div class="absolute top-3 right-3 flex flex-col gap-1 z-10">
+
+                    <a [href]="p.url " class="cursor-pointer" target="_blank">
+                        <button class="group/btn flex items-center gap-2 px-2 py-2 rounded-lg
+           bg-black/50 backdrop-blur-md text-white cursor-pointer
+           hover:bg-black/70
+           transition-all duration-300">
+
+
+
+                            <lucide-icon [name]="zap" class="w-4 h-4"></lucide-icon>
+                            <span class="text-xs whitespace-nowrap max-w-0 overflow-hidden opacity-0
+           transition-all duration-300
+           group-hover:max-w-[80px] group-hover:opacity-100">
+                                Try
+                            </span>
+                        </button>
+                    </a>
+                    <a [href]="p.href" class="cursor-pointer">
+
+                        <button class="group/btn flex items-center gap-2 px-2 py-2 rounded-lg
+bg-black/50 backdrop-blur-md text-white
+hover:bg-black/70
+transition-all duration-300 cursor-pointer">
+                            <lucide-icon [name]="info" class="w-4 h-4"></lucide-icon>
+                            <span class="text-xs whitespace-nowrap max-w-0 overflow-hidden opacity-0
+ transition-all duration-300
+ group-hover:max-w-[80px] group-hover:opacity-100">
+                                Details
+                            </span>
+                        </button>
+                    </a>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</section>
