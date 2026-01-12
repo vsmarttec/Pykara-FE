@@ -2,11 +2,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { LucideAngularModule, Rocket } from "lucide-angular";
 
 @Component({
   selector: 'app-lets-talk-project',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, LucideAngularModule],
   templateUrl: './lets-talk-project.html',
   styleUrls: ['./lets-talk-project.css']
 })
@@ -16,7 +17,7 @@ export class LetsTalkProject implements OnInit {
 
   projectForm: FormGroup;
   submitted = false;
-
+  Rocket = Rocket
   timelineOptions = [
     { value: 'immediate', label: 'Immediate Start' },
     { value: '1-3months', label: 'Within 1-3 Months' },

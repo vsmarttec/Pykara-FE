@@ -43,7 +43,6 @@
 
 .thumb-list {
     flex: 1;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -51,6 +50,17 @@
     height: 100%;
     min-height: 350px;
     overflow-y: auto;
+
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer / Edge */
+}
+
+/* Chrome, Safari, Edge */
+.thumb-list::-webkit-scrollbar {
+    display: none;
 }
 
 .thumb {

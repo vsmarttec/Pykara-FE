@@ -7,7 +7,7 @@ export const TECH_STACK_MAP: Record<string, any[]> = {
         { id: 2, delay: '0.6s', color: '#05998b', title: 'FASTAPI', subtitle: 'Backend API', logo: '/assets/tech/fastapi.jpg' },
         { id: 3, delay: '1.2s', color: '#DD0031', title: 'ANGULAR', subtitle: 'Frontend UI', logo: '/assets/tech/angular.jpg' },
         { id: 4, delay: '1.8s', color: '#FF6F00', title: 'TENSORFLOW', subtitle: 'ML Framework', logo: '/assets/tech/tensorflow.png' },
-        { id: 5, delay: '2.4s', color: '#6A1B9A', title: 'SPEECH-TO-TEXT', subtitle: 'AI Models', logo: '/assets/tech/speech.jpg' },
+        { id: 5, delay: '2.4s', color: '#6A1B9A', title: 'SPEECH-TO-TEXT', subtitle: 'Models', logo: '/assets/tech/speech.jpg' },
         { id: 6, delay: '3s', color: '#336791', title: 'POSTGRESQL', subtitle: 'Database', logo: '/assets/tech/postgres.png' },
         { id: 7, delay: '3.6s', color: '#0db7ed', title: 'DOCKER', subtitle: 'Containerization', logo: '/assets/tech/docker.png' },
     ],

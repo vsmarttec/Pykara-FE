@@ -29,7 +29,7 @@
           </div>
 
           <h1 class="text-4xl lg:text-5xl font-bold mb-4">{{selectedPortfolio.hero.title}}</h1>
-          <p class="text-xl text-blue-200 mb-6">{{selectedPortfolio.hero.subtitle}}</p>
+          <p class="text-xl text-blue-200 mb-6">{{selectedPortfolio.headline}}</p>
 
           <div class="flex flex-wrap gap-3">
             <a [href]="selectedPortfolio.url" target="_blank"
@@ -175,7 +175,7 @@
                   </div>
                   <h4 class="font-bold text-gray-900">Key Innovation</h4>
                 </div>
-                <p class="text-gray-700">AI-driven adaptive learning with real-time speech feedback and
+                <p class="text-gray-700">Models-driven adaptive learning with real-time speech feedback and
                   syllabus-controlled progression.</p>
               </div>
 
@@ -284,7 +284,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <h3 class="text-lg font-bold mb-4 text-blue-200">AI Models Used</h3>
+              <h3 class="text-lg font-bold mb-4 text-blue-200"> Models Used</h3>
               <ul class="space-y-3">
                 <li *ngFor="let model of selectedPortfolio.aiArchitecture.modelsUsed" class="flex items-start">
                   <svg class="w-5 h-5 text-green-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -542,9 +542,9 @@
             <div class="flex items-center justify-between mb-6">
               <div>
                 <h2 class="text-3xl font-bold bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-                  Other AI Products
+                  Other POC Products
                 </h2>
-                <p class="text-blue-100 mt-2">Explore our innovative AI solutions</p>
+                <p class="text-blue-100 mt-2">Explore our innovative solutions</p>
               </div>
               <div class="bg-white/10 p-3 rounded-xl backdrop-blur-sm">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -590,7 +590,7 @@
 
               <!-- Image caption -->
               <p class="text-center text-blue-100 text-sm mt-4">
-                {{selectedPortfolio.caption || 'Interactive AI interface showcasing real-time capabilities'}}
+                {{selectedPortfolio.caption || 'An interactive interface that demonstrates real-time system capabilities.'}}
               </p>
             </div>
 

@@ -1,199 +1,203 @@
 <footer class="relative bg-gradient-to-b from-gray-900 to-black text-white overflow-hidden">
-    <!-- Background Elements -->
-    <div class="absolute inset-0 opacity-10">
-        <div
-            class="absolute top-0 left-0 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
-        </div>
-        <div
-            class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
-        </div>
-    </div>
 
-    <div class="relative container mx-auto px-4 md:px-8 py-12 md:py-20">
-        <!-- Main Footer Content -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12 md:mb-20">
+    <div class=" ">
 
-            <!-- Company Info -->
-            <div class="lg:col-span-2">
-                <div class="mb-8">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="    ">
-                            <img src="/assets/py-logo.png" alt="" class="w-10">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 opacity-10 mx-9">
+            <div
+                class="absolute top-0 left-0 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+            </div>
+        </div>
+
+        <div class="relative container  px-4 md:px-8 py-12 md:py-20 ">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12 md:mb-20 mx-9">
+
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="mb-8">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="    ">
+                                <img src="/assets/py-logo.png" alt="" class="w-10">
+                            </div>
+                            <div>
+                                <h2 class="text-3xl font-bold">
+                                    <span class="gradient-text">
+                                        Pykara
+                                    </span>
+                                    <span class="text-white"> Technologies</span>
+                                </h2>
+                                <p class="text-gray-400 text-sm">Innovating for the future</p>
+                            </div>
                         </div>
-                        <div>
-                            <h2 class="text-3xl font-bold">
-                                <span class="gradient-text">
-                                    Pykara
-                                </span>
-                                <span class="text-white"> Technologies</span>
-                            </h2>
-                            <p class="text-gray-400 text-sm">Innovating for the future</p>
+
+                        <p class="text-gray-300 max-w-lg leading-relaxed mb-8">
+                            We transform ideas into exceptional digital experiences through cutting-edge
+                            technology and innovative solutions.
+                        </p>
+
+                        <!-- Social Links -->
+                        <div class="flex items-center gap-4">
+                            <a href="https://www.facebook.com/people/Pykara/100087653675803/" target="_blank" class="group p-3 rounded-xl bg-gray-800/50 hover:bg-blue-600/20 
+                                      border border-gray-700/50 hover:border-blue-500/50 
+                                      transition-all duration-300 hover:-translate-y-1">
+                                <lucide-icon [name]="facebook"
+                                    class="w-5 h-5 text-gray-300 group-hover:text-blue-400"></lucide-icon>
+                            </a>
+                            <a href="mailto:info@pykara.net" class="group p-3 rounded-xl bg-gray-800/50 hover:bg-purple-600/20 
+                                      border border-gray-700/50 hover:border-purple-500/50 
+                                      transition-all duration-300 hover:-translate-y-1">
+                                <lucide-icon [name]="mail"
+                                    class="w-5 h-5 text-gray-300 group-hover:text-purple-400"></lucide-icon>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pykara-technologies/" target="_blank" class="group p-3 rounded-xl bg-gray-800/50 hover:bg-blue-700/20 
+                                      border border-gray-700/50 hover:border-blue-600/50 
+                                      transition-all duration-300 hover:-translate-y-1">
+                                <lucide-icon [name]="linkedinIcon"
+                                    class="w-5 h-5 text-gray-300 group-hover:text-blue-300"></lucide-icon>
+                            </a>
                         </div>
                     </div>
+                </div>
 
-                    <p class="text-gray-300 max-w-lg leading-relaxed mb-8">
-                        We transform ideas into exceptional digital experiences through cutting-edge
-                        technology and innovative solutions.
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 flex items-center gap-2">
+                        <lucide-icon [name]="chevronRightIcon" class="w-5 h-5 text-blue-400"></lucide-icon>
+                        Quick Links
+                    </h3>
+                    <ul class="space-y-3">
+                        <li *ngFor="let link of quickLinks">
+                            <a [routerLink]="link.url" (click)="scrollToTop()" class="flex items-center gap-2 text-gray-300 hover:text-white 
+                                      transition-colors duration-300 group">
+                                <lucide-icon [name]="link.icon" class="w-4 h-4 text-gray-400 
+                                          group-hover:text-blue-400 transition-colors duration-300"></lucide-icon>
+                                <span>{{ link.name }}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 flex items-center gap-2">
+                        <lucide-icon [name]="phoneIcon" class="w-5 h-5 text-blue-400"></lucide-icon>
+                        Contact Us
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center 
+                                        justify-center mt-1">
+                                <lucide-icon [name]="mailIcon" class="w-4 h-4 text-blue-400"></lucide-icon>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Email</p>
+                                <a routerLink="mailto:info@pykara.net"
+                                    class="text-gray-300 hover:text-white transition-colors duration-300">
+                                    info@pykara.net
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center 
+                                        justify-center mt-1">
+                                <lucide-icon [name]="phoneIcon" class="w-4 h-4 text-blue-400"></lucide-icon>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Phone</p>
+                                <a routerLink="tel:+1234567890"
+                                    class="text-gray-300 hover:text-white transition-colors duration-300">
+                                    +91 9994190964
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center 
+                                        justify-center mt-1">
+                                <lucide-icon [name]="mapPinIcon" class="w-4 h-4 text-blue-400"></lucide-icon>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Location</p>
+                                <p class="text-gray-300">Chennai</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800/50 my-12"></div>
+
+            <!-- Bottom Section -->
+            <div class="flex  justify-between items-center gap-2 mx-9">
+                <!-- Copyright -->
+                <div class="text-center md:text-left grid grid-cols-1 md:grid-cols-2">
+                    <p class="text-gray-400">
+                        © 2018 Pykara Technologies. All Rights Reserved.
                     </p>
+                    <!-- <p class="text-gray-500 text-sm mt-2">
+                        Crafted with <span class="text-red-400">♥</span> for innovation
+                    </p> -->
+                </div>
 
-                    <!-- Social Links -->
-                    <div class="flex items-center gap-4">
-                        <a routerLink="https://www.facebook.com/people/Pykara/100087653675803/" target="_blank" class="group p-3 rounded-xl bg-gray-800/50 hover:bg-blue-600/20 
-                                  border border-gray-700/50 hover:border-blue-500/50 
-                                  transition-all duration-300 hover:-translate-y-1">
-                            <lucide-icon [name]="facebook"
-                                class="w-5 h-5 text-gray-300 group-hover:text-blue-400"></lucide-icon>
+                <!-- Additional Info -->
+                <div class="flex  items-center gap-2 grid grid-cols-1 md:grid-cols-2">
+                    <!-- Tech Stack Badges -->
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full 
+                                    bg-gray-800/50 border border-gray-700/50">
+                            <lucide-icon [name]="shieldIcon" class="w-4 h-4 text-green-400"></lucide-icon>
+                            <span class="text-sm text-gray-300">Secure</span>
+                        </div>
+                        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full 
+                                    bg-gray-800/50 border border-gray-700/50">
+                            <lucide-icon [name]="zapIcon" class="w-4 h-4 text-yellow-400"></lucide-icon>
+                            <span class="text-sm text-gray-300">Fast</span>
+                        </div>
+                        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full 
+                                    bg-gray-800/50 border border-gray-700/50">
+                            <lucide-icon [name]="usersIcon" class="w-4 h-4 text-blue-400"></lucide-icon>
+                            <span class="text-sm text-gray-300">Team</span>
+                        </div>
+                    </div>
+
+                    <!-- Policy Links -->
+                    <div class="flex items-center gap-6 text-sm">
+                        <a routerLink="/privacy-policy"
+                            class="text-gray-400 hover:text-white transition-colors duration-300">
+                            Privacy Policy
                         </a>
-                        <a routerLink="mailto:info@pykara.net" class="group p-3 rounded-xl bg-gray-800/50 hover:bg-purple-600/20 
-                                  border border-gray-700/50 hover:border-purple-500/50 
-                                  transition-all duration-300 hover:-translate-y-1">
-                            <lucide-icon [name]="mail"
-                                class="w-5 h-5 text-gray-300 group-hover:text-purple-400"></lucide-icon>
+                        <a routerLink="/terms" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            Terms of Service
                         </a>
-                        <a routerLink="https://www.linkedin.com/in/pykara-technologies/" target="_blank" class="group p-3 rounded-xl bg-gray-800/50 hover:bg-blue-700/20 
-                                  border border-gray-700/50 hover:border-blue-600/50 
-                                  transition-all duration-300 hover:-translate-y-1">
-                            <lucide-icon [name]="linkedinIcon"
-                                class="w-5 h-5 text-gray-300 group-hover:text-blue-300"></lucide-icon>
-                        </a>
+
                     </div>
                 </div>
             </div>
 
-            <!-- Quick Links -->
-            <div>
-                <h3 class="text-lg font-semibold mb-6 flex items-center gap-2">
-                    <lucide-icon [name]="chevronRightIcon" class="w-5 h-5 text-blue-400"></lucide-icon>
-                    Quick Links
-                </h3>
-                <ul class="space-y-3">
-                    <li *ngFor="let link of quickLinks">
-                        <a [routerLink]="link.url" (click)="scrollToTop()" class="flex items-center gap-2 text-gray-300 hover:text-white 
-                                  transition-colors duration-300 group">
-                            <lucide-icon [name]="link.icon" class="w-4 h-4 text-gray-400 
-                                      group-hover:text-blue-400 transition-colors duration-300"></lucide-icon>
-                            <span>{{ link.name }}</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div>
-                <h3 class="text-lg font-semibold mb-6 flex items-center gap-2">
-                    <lucide-icon [name]="phoneIcon" class="w-5 h-5 text-blue-400"></lucide-icon>
-                    Contact Us
-                </h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center 
-                                    justify-center mt-1">
-                            <lucide-icon [name]="mailIcon" class="w-4 h-4 text-blue-400"></lucide-icon>
-                        </div>
-                        <div>
-                            <p class="text-sm text-gray-400">Email</p>
-                            <a routerLink="mailto:info@pykara.net"
-                                class="text-gray-300 hover:text-white transition-colors duration-300">
-                                info@pykara.net
-                            </a>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center 
-                                    justify-center mt-1">
-                            <lucide-icon [name]="phoneIcon" class="w-4 h-4 text-blue-400"></lucide-icon>
-                        </div>
-                        <div>
-                            <p class="text-sm text-gray-400">Phone</p>
-                            <a routerLink="tel:+1234567890"
-                                class="text-gray-300 hover:text-white transition-colors duration-300">
-                                +91 9994190964
-                            </a>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center 
-                                    justify-center mt-1">
-                            <lucide-icon [name]="mapPinIcon" class="w-4 h-4 text-blue-400"></lucide-icon>
-                        </div>
-                        <div>
-                            <p class="text-sm text-gray-400">Location</p>
-                            <p class="text-gray-300">Chennai</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <!-- Back to Top -->
+            <button *ngIf="showButton" (click)="scrollToTop()" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gradient-to-r 
+                           from-blue-600 to-purple-600 flex items-center justify-center 
+                           shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 
+                           group z-50">
+                <svg class="w-6 h-6 text-white transform group-hover:-translate-y-1 transition-transform" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                </svg>
+            </button>
         </div>
 
-        <!-- Divider -->
-        <div class="border-t border-gray-800/50 my-12"></div>
-
-        <!-- Bottom Section -->
-        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-            <!-- Copyright -->
-            <div class="text-center md:text-left">
-                <p class="text-gray-400">
-                    © 2018 Pykara Technologies. All Rights Reserved.
-                </p>
-                <!-- <p class="text-gray-500 text-sm mt-2">
-                    Crafted with <span class="text-red-400">♥</span> for innovation
-                </p> -->
-            </div>
-
-            <!-- Additional Info -->
-            <div class="flex flex-col md:flex-row items-center gap-6">
-                <!-- Tech Stack Badges -->
-                <div class="flex items-center gap-3">
-                    <div class="flex items-center gap-2 px-3 py-1.5 rounded-full 
-                                bg-gray-800/50 border border-gray-700/50">
-                        <lucide-icon [name]="shieldIcon" class="w-4 h-4 text-green-400"></lucide-icon>
-                        <span class="text-sm text-gray-300">Secure</span>
-                    </div>
-                    <div class="flex items-center gap-2 px-3 py-1.5 rounded-full 
-                                bg-gray-800/50 border border-gray-700/50">
-                        <lucide-icon [name]="zapIcon" class="w-4 h-4 text-yellow-400"></lucide-icon>
-                        <span class="text-sm text-gray-300">Fast</span>
-                    </div>
-                    <div class="flex items-center gap-2 px-3 py-1.5 rounded-full 
-                                bg-gray-800/50 border border-gray-700/50">
-                        <lucide-icon [name]="usersIcon" class="w-4 h-4 text-blue-400"></lucide-icon>
-                        <span class="text-sm text-gray-300">Team</span>
-                    </div>
-                </div>
-
-                <!-- Policy Links -->
-                <div class="flex items-center gap-6 text-sm">
-                    <a routerLink="/privacy-policy"
-                        class="text-gray-400 hover:text-white transition-colors duration-300">
-                        Privacy Policy
-                    </a>
-                    <a routerLink="/terms"
-                        class="text-gray-400 hover:text-white transition-colors duration-300">
-                        Terms of Service
-                    </a>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Back to Top -->
-        <button *ngIf="showButton" (click)="scrollToTop()" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gradient-to-r 
-                       from-blue-600 to-purple-600 flex items-center justify-center 
-                       shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 
-                       group z-50">
-            <svg class="w-6 h-6 text-white transform group-hover:-translate-y-1 transition-transform" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        <!-- Wave Decoration -->
+        <div class="relative  h-20 -mb-1 overflow-hidden">
+            <svg class="absolute bottom-0 w-full h-20" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    fill="rgba(59, 130, 246, 0.1)"></path>
             </svg>
-        </button>
-    </div>
-
-    <!-- Wave Decoration -->
-    <div class="relative h-20 -mb-1 overflow-hidden">
-        <svg class="absolute bottom-0 w-full h-20" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                fill="rgba(59, 130, 246, 0.1)"></path>
-        </svg>
+        </div>
     </div>
 </footer>

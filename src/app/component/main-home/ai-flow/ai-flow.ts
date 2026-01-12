@@ -97,7 +97,7 @@ Our AI & Data layer focuses on building intelligent systems that can understand,
 using modern large language models and structured data pipelines.
 `,
       highlights: [
-        'Retrieval-Augmented Generation (RAG) for contextual AI responses',
+        'Retrieval-Augmented Generation (RAG) for accurate, context-aware responses',
         'Vector databases for semantic search and knowledge retrieval',
         'Speech and pronunciation AI for learning platforms',
         'Custom ML pipelines for scoring, prediction, and analysis',
@@ -106,25 +106,26 @@ using modern large language models and structured data pipelines.
       active: true,
     },
     {
-      id: 'webApis',
-      title: 'Web & APIs',
-      color: 'blue',
-      icon: 'globe',
-      technologies: ['Angular', '.NET 8', 'SQL / Redis', 'Auth', 'Async Processing'],
+      id: 'security',
+      title: 'Security',
+      color: 'red',
+      icon: 'shield-alt',
+      technologies: ['Access Control', 'Compliance', 'Security Controls', 'Auditing'],
       position: { top: '50%', right: '80px', transform: 'translateY(-50%)' },
+
       active: false,
       description: `
-Our Web & API layer acts as the backbone for all user-facing and system-to-system communication.
-We build scalable, secure, and high-performance APIs that power dashboards, AI workflows,
-and real-time applications.
+Security is embedded into every layer of our architecture.
+We ensure that data, models, and user interactions are protected
+through strong governance and compliance-driven design.
 `,
       highlights: [
-        'Angular-based enterprise dashboards and learning platforms',
-        '.NET-based APIs for business logic and AI orchestration',
-        'SQL and Redis for transactional and high-speed data access',
-        'Authentication and role-based authorization',
-        'Asynchronous processing for long-running AI tasks'
-      ],
+        'Access control and role-based permissions',
+        'Compliance-oriented system design',
+        'Secure API and data handling practices',
+        'Audit trails for sensitive AI workflows',
+        'Continuous security review and hardening'
+      ]
     },
     {
       id: 'cloudDevops',
@@ -142,30 +143,32 @@ We focus on automation, observability, and controlled deployments across cloud e
         'Azure cloud infrastructure for AI and web workloads',
         'Containerized deployments for consistency across environments',
         'CI/CD pipelines for rapid and safe releases',
-        'Monitoring and logging for AI and application health',
+        'Monitoring and logging to ensure application performance, stability, and system health',
         'Automated testing and environment validation'
       ]
     },
+
+
     {
-      id: 'security',
-      title: 'Security',
-      color: 'red',
-      icon: 'shield-alt',
-      technologies: ['Access Control', 'Compliance', 'Security Controls', 'Auditing'],
+      id: 'webApis',
+      title: 'Web & APIs',
+      color: 'blue',
+      icon: 'globe',
+      technologies: ['Angular', '.NET 8', 'SQL / Redis', 'Auth', 'Async Processing'],
       position: { top: '50%', left: '80px', transform: 'translateY(-50%)' },
       active: false,
       description: `
-Security is embedded into every layer of our architecture.
-We ensure that data, models, and user interactions are protected
-through strong governance and compliance-driven design.
+Our Web & API layer acts as the backbone for all user-facing and system-to-system communication.
+We build scalable, secure, and high-performance APIs that power dashboards, AI workflows,
+and real-time applications.
 `,
       highlights: [
-        'Access control and role-based permissions',
-        'Compliance-oriented system design',
-        'Secure API and data handling practices',
-        'Audit trails for sensitive AI workflows',
-        'Continuous security review and hardening'
-      ]
+        'Angular-based enterprise dashboards and learning platforms',
+        '.NET-based APIs for business logic and AI orchestration',
+        'SQL and Redis for transactional and high-speed data access',
+        'Authentication and role-based authorization',
+        'Asynchronous processing for long-running AI tasks'
+      ],
     },
   ];
 

@@ -1,11 +1,13 @@
 <!-- privacy-policy.component.html -->
 <div class="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-100 animate-fade-in">
-  
+
   <!-- Animated Background -->
   <div class="fixed inset-0 overflow-hidden pointer-events-none">
     <div class="absolute top-1/4 left-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
-    <div class="absolute bottom-1/3 right-10 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-700"></div>
-    <div class="absolute top-2/3 left-1/3 w-80 h-80 bg-green-500/5 rounded-full blur-3xl animate-pulse delay-1400"></div>
+    <div class="absolute bottom-1/3 right-10 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-700">
+    </div>
+    <div class="absolute top-2/3 left-1/3 w-80 h-80 bg-green-500/5 rounded-full blur-3xl animate-pulse delay-1400">
+    </div>
   </div>
 
   <!-- Header -->
@@ -14,8 +16,9 @@
       <!-- Navigation -->
       <div class="flex items-center justify-between mb-12">
         <a routerLink="/" class="flex items-center space-x-3 group">
-          <div class="w-12 h-12 bg-gradient-to-r from-[#6774a7] to-[#c95065] rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-emerald-500/20 transition-all duration-300">
-            <span class="text-xl font-bold">P</span>
+          <div
+            class="w-12 h-12 bg-gradient-to-r  rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-emerald-500/20 transition-all duration-300">
+            <img src="/assets/py-logo.png" alt="" class="w-10 h-10">
           </div>
           <div>
             <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#6774a7] to-[#c95065]">
@@ -24,14 +27,14 @@
             <p class="text-xs text-gray-400 mt-1">Technologies</p>
           </div>
         </a>
-        
+
         <div class="flex items-center space-x-4">
-          <a routerLink="/terms" 
-             class="px-4 py-2 bg-gray-800/50 hover:bg-gray-800 border border-gray-700 rounded-lg text-sm transition-all duration-300 hover:scale-105">
+          <a routerLink="/terms"
+            class="px-4 py-2 bg-gray-800/50 hover:bg-gray-800 border border-gray-700 rounded-lg text-sm transition-all duration-300 hover:scale-105">
             Terms & Conditions
           </a>
-          <a routerLink="/contact-us" 
-             class="px-4 py-2 bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/30 rounded-lg text-sm transition-all duration-300 hover:scale-105">
+          <a routerLink="/contact-us"
+            class="px-4 py-2 bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/30 rounded-lg text-sm transition-all duration-300 hover:scale-105">
             Contact Us
           </a>
         </div>
@@ -42,24 +45,26 @@
         <div class="inline-block p-3 bg-emerald-900/30 rounded-2xl border border-emerald-700/30 mb-6">
           <span class="text-4xl">🛡️</span>
         </div>
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#6774a7] to-[#c95065]">
+        <h1
+          class="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#6774a7] to-[#c95065]">
           Privacy Policy
         </h1>
         <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-          Your privacy is <span class="font-bold text-emerald-300">super important to us!</span> We're committed to protecting your data and providing a safe online experience.
+          Your privacy is <span class="font-bold text-emerald-300">super important to us!</span> We're committed to
+          protecting your data and providing a safe online experience.
         </p>
-        
+
         <div class="flex flex-wrap justify-center gap-4">
-          <button (click)="expandAll()" 
-                  class="px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-lg font-semibold hover:from-emerald-700 hover:to-teal-600 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
+          <button (click)="expandAll()"
+            class="px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-lg font-semibold hover:from-emerald-700 hover:to-teal-600 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
             Expand All Sections
           </button>
-          <button (click)="printPage()" 
-                  class="px-6 py-3 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1">
+          <button (click)="printPage()"
+            class="px-6 py-3 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1">
             📄 Print Policy
           </button>
-          <button (click)="scrollToSection('rights')" 
-                  class="px-6 py-3 bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1">
+          <button (click)="scrollToSection('rights')"
+            class="px-6 py-3 bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1">
             Know Your Rights
           </button>
         </div>
@@ -72,7 +77,7 @@
           <div class="flex flex-wrap gap-3">
             <ng-container *ngFor="let section of sections">
               <button (click)="scrollToSection(section.id)"
-                      [class]="activeSection === section.id 
+                [class]="activeSection === section.id 
                         ? 'px-4 py-2 bg-gradient-to-r from-emerald-700 to-teal-600 rounded-lg text-sm font-medium transition-all duration-300'
                         : 'px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg text-sm font-medium transition-all duration-300'">
                 {{ section.icon }} {{ section.title }}
@@ -89,36 +94,38 @@
     <div class="container mx-auto px-4 md:px-8">
       <!-- Introduction -->
       <section id="introduction" class="mb-12 animate-slide-up" style="animation-delay: 0.3s">
-        <div class="bg-gradient-to-br from-gray-900 to-black border border-emerald-800/30 rounded-2xl p-8 shadow-2xl hover:border-emerald-700/50 transition-all duration-500">
+        <div
+          class="bg-gradient-to-br from-gray-900 to-black border border-emerald-800/30 rounded-2xl p-8 shadow-2xl hover:border-emerald-700/50 transition-all duration-500">
           <div class="flex items-center mb-6">
             <div class="w-12 h-12 bg-emerald-900/30 rounded-xl flex items-center justify-center mr-4">
               <span class="text-2xl">🛡️</span>
             </div>
             <h2 class="text-3xl font-bold text-emerald-300">Introduction & Commitment</h2>
           </div>
-          
+
           <div class="space-y-6">
             <p class="text-lg text-gray-300 leading-relaxed">
-              Your privacy is <span class="font-bold text-emerald-300">super important to us!</span> 
+              Your privacy is <span class="font-bold text-emerald-300">super important to us!</span>
               pykara is committed to protecting your privacy and providing you with a safe and secure online experience.
             </p>
-            
+
             <div class="bg-emerald-900/20 border border-emerald-800/30 rounded-xl p-6">
               <h3 class="text-xl font-semibold mb-3 text-emerald-200">Scope</h3>
               <p class="text-gray-300">
-                This Privacy Policy applies to pykara technologies, as well as any other website owned by pykara technologies. 
+                This Privacy Policy applies to pykara technologies, as well as any other website owned by pykara
+                technologies.
                 It discloses the kinds of information we gather, how we may use it, and how we may share it.
               </p>
             </div>
-            
+
             <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
               <h3 class="text-xl font-semibold mb-3 text-white">Your Agreement</h3>
               <p class="text-gray-300 mb-3">
-                Please read this policy carefully. It may be modified periodically. Your continued use of our website 
+                Please read this policy carefully. It may be modified periodically. Your continued use of our website
                 signifies your acceptance of this Privacy Policy.
               </p>
               <p class="text-emerald-300 font-medium">
-                📧 Questions? Contact us anytime at 
+                📧 Questions? Contact us anytime at
                 <a href="mailto:info@pykara" class="underline hover:text-emerald-200">info@pykara technologies</a>
               </p>
             </div>
@@ -132,12 +139,13 @@
         <div class="lg:col-span-2 space-y-6">
           <ng-container *ngFor="let section of sections.slice(1, 7); let i = index">
             <div class="animate-slide-up" [style.animation-delay.ms]="(i + 4) * 100">
-              <div id="{{section.id}}" 
-                   class="bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-xl overflow-hidden hover:border-emerald-700/30 transition-all duration-300">
-                <button (click)="toggleSection(section.id)" 
-                        class="w-full p-6 text-left flex justify-between items-center hover:bg-gray-800/30 transition-colors duration-200">
+              <div id="{{section.id}}"
+                class="bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-xl overflow-hidden hover:border-emerald-700/30 transition-all duration-300">
+                <button (click)="toggleSection(section.id)"
+                  class="w-full p-6 text-left flex justify-between items-center hover:bg-gray-800/30 transition-colors duration-200">
                   <div class="flex items-center space-x-4">
-                    <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-emerald-700 to-teal-600 flex items-center justify-center">
+                    <div
+                      class="w-10 h-10 rounded-lg bg-gradient-to-r from-emerald-700 to-teal-600 flex items-center justify-center">
                       <span class="text-lg">{{ section.icon }}</span>
                     </div>
                     <div>
@@ -147,17 +155,14 @@
                       </p> -->
                     </div>
                   </div>
-                  <svg [class.rotate-180]="section.expanded" 
-                       class="w-6 h-6 text-emerald-400 transition-transform duration-300" 
-                       fill="none" 
-                       stroke="currentColor" 
-                       viewBox="0 0 24 24">
+                  <svg [class.rotate-180]="section.expanded"
+                    class="w-6 h-6 text-emerald-400 transition-transform duration-300" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                   </svg>
                 </button>
 
-                <div *ngIf="section.expanded" 
-                     class="px-6 pb-6 border-t border-gray-800 animate-fade-in">
+                <div *ngIf="section.expanded" class="px-6 pb-6 border-t border-gray-800 animate-fade-in">
                   <div class="pt-6">
                     <ng-container [ngSwitch]="section.id">
                       <!-- Information Collection -->
@@ -165,7 +170,8 @@
                         <div class="bg-emerald-900/10 border border-emerald-800/20 rounded-xl p-5">
                           <h4 class="text-lg font-semibold mb-3 text-emerald-300">Purpose of Collection</h4>
                           <p class="text-gray-300 mb-4">
-                            We collect personally identifiable information to fulfill your orders, tell you about new products and deals, 
+                            We collect personally identifiable information to fulfill your orders, tell you about new
+                            products and deals,
                             and provide you with an amazing shopping experience.
                           </p>
                           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -182,7 +188,8 @@
                             <div class="bg-gray-800/30 p-4 rounded-lg">
                               <h5 class="font-semibold text-emerald-200 mb-2">Our Commitment:</h5>
                               <p class="text-gray-300">
-                                We value your trust and will do everything we can to safeguard your privacy and the security of your transactions.
+                                We value your trust and will do everything we can to safeguard your privacy and the
+                                security of your transactions.
                               </p>
                             </div>
                           </div>
@@ -222,14 +229,16 @@
                       <div *ngSwitchCase="'sharing'" class="space-y-6">
                         <div class="space-y-4">
                           <p class="text-gray-300">
-                            pykara technologies provides aggregate statistics and information about our sales, traffic patterns 
+                            pykara technologies provides aggregate statistics and information about our sales, traffic
+                            patterns
                             and related site information to third parties.
                           </p>
-                          
+
                           <div class="bg-yellow-900/20 border border-yellow-800/30 rounded-xl p-4">
                             <h4 class="font-semibold text-yellow-300 mb-2">⚠️ Important Note:</h4>
                             <p class="text-yellow-200">
-                              We reserve the right to share aggregate statistical data of which your personal information is a part, 
+                              We reserve the right to share aggregate statistical data of which your personal
+                              information is a part,
                               as well as your specific personal information sometime in the future.
                             </p>
                           </div>
@@ -255,7 +264,7 @@
                         <div class="bg-blue-900/20 border border-blue-800/30 rounded-xl p-5">
                           <h4 class="text-lg font-semibold mb-3 text-blue-300">Marketing Emails</h4>
                           <p class="text-gray-300 mb-4">
-                            We know you love email! And we love to tell you about new arrivals. 
+                            We know you love email! And we love to tell you about new arrivals.
                             So we send emails to notify customers about new arrivals and special events.
                           </p>
                           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -270,15 +279,17 @@
                             <div class="bg-gray-800/30 p-4 rounded-lg">
                               <h5 class="font-semibold text-blue-200 mb-2">Transactional Emails</h5>
                               <p class="text-gray-300">
-                                We send order confirmations, tracking information, and responses to your inquiries via email.
+                                We send order confirmations, tracking information, and responses to your inquiries via
+                                email.
                               </p>
                             </div>
                           </div>
                         </div>
                         <div class="bg-green-900/20 border border-green-800/30 rounded-xl p-4">
                           <p class="text-green-300">
-                            <strong>Opt-Out:</strong> You may opt out at any time by sending a request to 
-                            <a href="mailto:info@pykara" class="underline hover:text-green-200">info@pykara technologies</a>
+                            <strong>Opt-Out:</strong> You may opt out at any time by sending a request to
+                            <a href="mailto:info@pykara" class="underline hover:text-green-200">info@pykara
+                              technologies</a>
                           </p>
                         </div>
                       </div>
@@ -291,7 +302,7 @@
                         <div class="bg-purple-900/20 border border-purple-800/30 rounded-xl p-5">
                           <h4 class="text-lg font-semibold mb-3 text-purple-300">⚠️ Important Reminder</h4>
                           <p class="text-gray-300 mb-3">
-                            Please know that we cannot constantly monitor our social media pages and that 
+                            Please know that we cannot constantly monitor our social media pages and that
                             any information that you share may be viewed by others.
                           </p>
                           <div class="flex space-x-4 mt-4">
@@ -316,7 +327,8 @@
                         <div class="bg-amber-900/20 border border-amber-800/30 rounded-xl p-5">
                           <h4 class="text-lg font-semibold mb-3 text-amber-300">What Are Cookies?</h4>
                           <p class="text-gray-300 mb-4">
-                            webdadsu.com uses "cookies" to identify visitors to our website. Cookies are bits of information 
+                            webdadsu.com uses "cookies" to identify visitors to our website. Cookies are bits of
+                            information
                             that a website transfers to an individual's hard drive for record keeping purposes.
                           </p>
                           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -336,11 +348,11 @@
                             </div>
                           </div>
                         </div>
-                        
+
                         <div class="bg-gray-800/30 border border-gray-700 rounded-xl p-4">
                           <h4 class="font-semibold text-white mb-2">Cookie Management</h4>
                           <p class="text-gray-300">
-                            Most browsers allow you to control cookies through their settings preferences. 
+                            Most browsers allow you to control cookies through their settings preferences.
                             However, limiting cookies may affect your experience on our site.
                           </p>
                         </div>
@@ -366,7 +378,8 @@
               </div>
               <div class="space-y-4">
                 <p class="text-gray-300">
-                  pykara technologies is a very family friendly online shopping portal. Our products and culture reflect that.
+                  pykara technologies is a very family friendly online shopping portal. Our products and culture reflect
+                  that.
                 </p>
                 <div class="bg-pink-900/20 border border-pink-800/30 rounded-xl p-4">
                   <h4 class="font-semibold text-pink-200 mb-2">Important Restrictions</h4>
@@ -415,8 +428,8 @@
                   <span class="text-gray-300">Right to Opt-Out</span>
                 </div>
                 <div class="pt-4">
-                  <a routerLink="/contact-us" 
-                     class="block text-center py-2 bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 rounded-lg transition-all duration-300">
+                  <a routerLink="/contact-us"
+                    class="block text-center py-2 bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 rounded-lg transition-all duration-300">
                     Exercise Your Rights
                   </a>
                 </div>
@@ -426,7 +439,8 @@
 
           <!-- Security Measures -->
           <div class="animate-slide-up" style="animation-delay: 1.2s">
-            <div id="security" class="bg-gradient-to-br from-gray-900 to-black border border-emerald-800/30 rounded-2xl p-6">
+            <div id="security"
+              class="bg-gradient-to-br from-gray-900 to-black border border-emerald-800/30 rounded-2xl p-6">
               <div class="flex items-center mb-4">
                 <div class="w-10 h-10 bg-emerald-900/30 rounded-lg flex items-center justify-center mr-3">
                   <span class="text-xl">🔒</span>
@@ -449,7 +463,8 @@
 
           <!-- Policy Updates -->
           <div class="animate-slide-up" style="animation-delay: 1.3s">
-            <div id="updates" class="bg-gradient-to-br from-gray-900 to-black border border-purple-800/30 rounded-2xl p-6">
+            <div id="updates"
+              class="bg-gradient-to-br from-gray-900 to-black border border-purple-800/30 rounded-2xl p-6">
               <div class="flex items-center mb-4">
                 <div class="w-10 h-10 bg-purple-900/30 rounded-lg flex items-center justify-center mr-3">
                   <span class="text-xl">🔄</span>
@@ -476,16 +491,16 @@
                 Have questions about your privacy or data?
               </p>
               <div class="space-y-3">
-                <a href="mailto:info@pykara" 
-                   class="flex items-center space-x-3 p-3 bg-teal-600/20 hover:bg-teal-600/30 border border-teal-500/30 rounded-lg transition-all duration-300">
+                <a href="mailto:info@pykara"
+                  class="flex items-center space-x-3 p-3 bg-teal-600/20 hover:bg-teal-600/30 border border-teal-500/30 rounded-lg transition-all duration-300">
                   <span class="text-xl">📧</span>
                   <div>
                     <p class="font-medium">Email Us</p>
                     <p class="text-sm text-teal-300">info@pykara technologies</p>
                   </div>
                 </a>
-                <a routerLink="/contact-us" 
-                   class="flex items-center space-x-3 p-3 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg transition-all duration-300">
+                <a routerLink="/contact-us"
+                  class="flex items-center space-x-3 p-3 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg transition-all duration-300">
                   <span class="text-xl">💬</span>
                   <div>
                     <p class="font-medium">Contact Form</p>
@@ -499,14 +514,13 @@
       </div>
 
       <!-- Footer Actions -->
-      
+
     </div>
   </main>
 
   <!-- Scroll to Top Button -->
-  <button (click)="scrollToTop()" 
-          *ngIf="showScrollButton"
-          class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50 animate-bounce">
+  <button (click)="scrollToTop()" *ngIf="showScrollButton"
+    class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50 animate-bounce">
     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
     </svg>
