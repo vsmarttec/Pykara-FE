@@ -3,7 +3,7 @@
         <!-- Header Section -->
         <div class="text-center mb-12">
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{{ title }}</h1>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">{{ subtitle }}</p>
+            <p class="text-md text-gray-600 max-w-4xl mx-auto">{{ subtitle }}</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -30,8 +30,9 @@
                             </li>
                         </ul>
                         <div class="mt-6 p-4 bg-blue-50 rounded-lg">
-                            <p class="text-sm text-blue-700">
-                                <span class="font-semibold">Our promise:</span> We will review your requirements and
+                            <p class="text-sm text-[#5f7990]">
+                                <span class="font-semibold text-[#5f7990]-700">Our promise:</span> We will review your
+                                requirements and
                                 suggest a clear, practical next step.
                             </p>
                         </div>
@@ -191,13 +192,13 @@
                     <!-- Submit Button -->
                     <div class="pt-6">
                         <button type="submit"
-                            class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold py-4 px-6 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                            class="w-full bg-gradient-to-r from-blue-300 to-indigo-300 text-white font-semibold py-4 px-6 rounded-lg hover:from-blue-500 hover:to-indigo-500 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                             <span class="flex items-center justify-center">
-                                <span class="mr-2">🚀</span>
+                                <span class="mr-2 "><lucide-icon [name]="Rocket"></lucide-icon></span>
                                 Submit Your Project Details
                             </span>
                         </button>
-                        <p class="text-center text-gray-500 text-sm mt-4">
+                        <p class=" text-center text-gray-500 text-sm mt-4">
                             We'll get back to you within 24 hours with our initial thoughts
                         </p>
                     </div>

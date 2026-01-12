@@ -5,6 +5,8 @@ export interface ClientSegment {
     icon: string;
     color: string;
     iconColor: string;
+
+    tech?: string
 }
 
 
@@ -16,7 +18,8 @@ export const clientSegmentsdata: ClientSegment[] = [
         description: 'Helping founders turn ideas into stable, scalable products.',
         icon: '🚀',
         color: 'bg-blue-50',
-        iconColor: 'text-blue-600'
+        iconColor: 'text-blue-600',
+        tech: "End-to-end product collaboration"
     },
     {
         id: 2,
@@ -24,7 +27,8 @@ export const clientSegmentsdata: ClientSegment[] = [
         description: 'Improving systems, automation, and digital presence.',
         icon: '🏢',
         color: 'bg-green-50',
-        iconColor: 'text-green-600'
+        iconColor: 'text-green-600',
+        tech: 'Digital growth support'
     },
     {
         id: 3,
@@ -32,7 +36,8 @@ export const clientSegmentsdata: ClientSegment[] = [
         description: 'Supporting continuous development, upgrades, and performance improvements.',
         icon: '📈',
         color: 'bg-purple-50',
-        iconColor: 'text-purple-600'
+        iconColor: 'text-purple-600',
+        tech: 'Ongoing product engineering'
     },
     {
         id: 4,
@@ -40,6 +45,7 @@ export const clientSegmentsdata: ClientSegment[] = [
         description: 'Building secure, reliable solutions aligned with business processes.',
         icon: '🏛️',
         color: 'bg-amber-50',
-        iconColor: 'text-amber-600'
+        iconColor: 'text-amber-600',
+        tech: 'Enterprise-grade solution delivery'
     }
 ];

@@ -56,8 +56,8 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
         company: "SmartRetail AI",
         rating: 5,
         category: "Reliable Products Delivery",
-        quote: "Pykara took our data, ran a quick audit, and shipped a working AI prototype in days. They added guardrails, dashboards, and an evaluation plan so results stayed consistent in production. The outcome: measurable gains and a clear roadmap for phase two.",
-        highlight: "Working AI prototype in days",
+        quote: "Pykara took our data, ran a quick audit, and shipped a Intelligent solutions delivered in days. They added guardrails, dashboards, and an evaluation plan so results stayed consistent in production. The outcome: measurable gains and a clear roadmap for phase two.",
+        highlight: "Intelligent solutions delivered in days",
         date: "December 2023",
         color: "orange"
     }

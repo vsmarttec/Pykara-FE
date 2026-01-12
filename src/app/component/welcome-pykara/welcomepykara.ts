@@ -6,8 +6,8 @@ export const WelcomePykaraData = [
     {
         id: 'py-trade',
         title: 'PY-Trade',
-        type: 'AI Market Analysis Platform',
-        headline: "An AI-Powered Trading Intelligence",
+        type: 'Predictive Market Analysis Platform',
+        headline: "Market intelligence for smarter trading decisions",
         bg: "bg-[#041e51]",
         bg_image: "/assets/portfolio-dy/PyTrade-dy.png",
         isPOC: true,
@@ -41,7 +41,7 @@ export const WelcomePykaraData = [
         },
 
         summary:
-            'PY-Trade is an AI-assisted stock market analysis system focused on short-term and swing trading. It combines technical indicators, pattern recognition, and weighted scoring to generate clear Buy, Sell, or Neutral signals.',
+            'PY-Trade is a stock market analysis system focused on short-term and swing trading. It combines technical indicators, pattern recognition, and weighted scoring to generate clear Buy, Sell, or Neutral signals.',
 
         technologyStack: [
             'Python',
@@ -99,7 +99,7 @@ export const WelcomePykaraData = [
         roadmap: [
             'Fundamental analysis integration',
             'News sentiment scoring',
-            'AI-based price forecasting',
+            'Predictive Price Forecasting',
             'Broker API read-only integration'
         ],
 
@@ -110,7 +110,7 @@ export const WelcomePykaraData = [
         technologyAndModels: {
             title: 'Technology Stack & Models',
             description:
-                'PY-Trade is built using a modern web stack and analytical models designed for reliable short-term market analysis. The system combines backend processing, frontend visualization, technical analysis, and AI-based intelligence.',
+                'PY-Trade is built using a modern web stack and analytical models designed for reliable short-term market analysis. The system combines backend processing, frontend visualization, technical analysis, and data-driven intelligence.',
 
             stackCards: [
                 {
@@ -153,7 +153,7 @@ export const WelcomePykaraData = [
                     title: 'Scoring & Strategy Engine',
                     subtitle: 'Trading Intelligence',
                     content:
-                        'A weighted scoring system combines multiple technical indicators, pattern recognition, and optional AI predictions to generate Buy, Sell, or Neutral signals.'
+                        'A weighted scoring system combines multiple technical indicators, pattern recognition, and optional predictive models to generate Buy, Sell, or Neutral signals.'
                 },
                 {
                     title: 'PostgreSQL',
@@ -165,14 +165,14 @@ export const WelcomePykaraData = [
                     title: 'FUNDAMENTAL ANALYSIS',
                     subtitle: 'Company Financial Strength Evaluation',
                     content:
-                        'PY-Trade evaluates the financial health of companies using key fundamental metrics.It analyses earnings growth, revenue growth, debt- to - equity ratio, P / E ratio, and free cash flow.These fundamentals are combined with technical and news signals to support balanced and informed trading decisions.'
+                        'PY-Trade evaluates the financial health of companies using key fundamental metrics.It analyses earnings growth, revenue growth, debt- to - equity ratio, P/E ratio, and free cash flow.These fundamentals are combined with technical and news signals to support balanced and informed trading decisions.'
                 }
                 ,
                 {
                     title: 'NEWS SENTIMENT ANALYSIS',
-                    subtitle: 'AI-Driven Market News Insights',
+                    subtitle: 'Data-Driven Market News Insights',
                     content:
-                        'PY-Trade analyses financial news articles related to selected stocks and markets.AI models evaluate the overall sentiment of each article as positive, negative, or neutral and measure its short-term impact on price movement.This helps traders understand how news may influence market behaviour beyond charts and indicators.'
+                        'PY-Trade analyses financial news articles related to selected stocks and markets.Models evaluate the overall sentiment of each article as positive, negative, or neutral and measure its short-term impact on price movement.This helps traders understand how news may influence market behaviour beyond charts and indicators.'
                 }
             ]
         }
@@ -184,8 +184,8 @@ export const WelcomePykaraData = [
     {
         id: 'py-learn',
         title: 'PY-Learn',
-        type: 'AI Learning Platform',
-        headline: "An AI-enhanced language learning for schools",
+        type: 'Digital Learning Platform',
+        headline: "A smarter way to build language skills",
         bg: "bg-[#11143c]",
         bg_image: "/assets/portfolio-dy/py-learn-dy.png",
         isPOC: true,
@@ -218,7 +218,7 @@ export const WelcomePykaraData = [
         },
 
         summary:
-            'PY-Learn is an adaptive AI-powered learning platform designed to improve grammar, reading, listening, speaking, and writing skills. The system evaluates each response and unlocks content at the right difficulty level while maintaining strict syllabus control.',
+            'PY-Learn is an adaptive learning platform designed to improve grammar, reading, listening, speaking, and writing skills. The system evaluates each response and unlocks content at the appropriate difficulty level while maintaining strict syllabus control.',
 
         technologyStack: [
             'Python',
@@ -238,13 +238,13 @@ export const WelcomePykaraData = [
             ],
             intelligenceLogic: [
                 'Rule-based syllabus control',
-                'AI-based performance evaluation',
+                'Data-Driven Performance Evaluation',
                 'Optional RAG-based content grounding'
             ]
         },
 
         keyCapabilities: [
-            'AI-driven lessons across grammar, reading, listening, speaking, and writing',
+            'Adaptive lessons across grammar, reading, listening, speaking, and writing.',
             'Adaptive progression based on learner performance',
             'Pronunciation coaching with real-time speech feedback',
             'Topic-based drill-down with syllabus control',
@@ -287,7 +287,7 @@ export const WelcomePykaraData = [
         roadmap: [
             'European language models',
             'Extended pronunciation datasets',
-            'AI-generated teacher insights',
+            'System-Generated Teacher Insights',
             'Offline classroom learning support'
         ],
 
@@ -295,10 +295,78 @@ export const WelcomePykaraData = [
             primary: 'Request a Demo',
             secondary: 'Try It'
         },
+        // technologyAndModels: {
+        //     title: 'Technology & AI Models',
+        //     description:
+        //         'PY-Learn is an AI-powered learning platform designed for children and students. It focuses on pronunciation, listening, reading, and grammar skills using speech processing, language models, and interactive exercises.',
+
+        //     stackCards: [
+        //         {
+        //             title: 'Angular',
+        //             subtitle: 'Frontend Learning Interface',
+        //             content:
+        //                 'Angular is used to build an interactive and child-friendly learning interface. It handles audio playback, exercises, animations, and real-time feedback in the browser.'
+        //         },
+        //         {
+        //             title: 'Python',
+        //             subtitle: 'Backend Intelligence',
+        //             content:
+        //                 'Python is used as the core backend language. It manages audio processing, AI model execution, content generation, scoring logic, and API responses.'
+        //         },
+        //         {
+        //             title: 'Flask',
+        //             subtitle: 'API & Service Layer',
+        //             content:
+        //                 'Flask provides REST APIs that connect the frontend with AI models. It processes audio uploads, generates learning feedback, and returns evaluation results securely.'
+        //         },
+        //         {
+        //             title: 'Speech-to-Text Models',
+        //             subtitle: 'Pronunciation Analysis',
+        //             content:
+        //                 'Speech-to-text models such as Wav2Vec2 are used to convert student speech into text. This enables pronunciation checking, word matching, and error detection.'
+        //         },
+        //         {
+        //             title: 'Phoneme & IPA Analysis',
+        //             subtitle: 'Pronunciation Accuracy',
+        //             content:
+        //                 'Phoneme-level analysis and IPA comparison are used to identify vowel and consonant errors. This allows precise pronunciation feedback instead of simple correctness checks.'
+        //         },
+        //         {
+        //             title: 'Natural Language Processing',
+        //             subtitle: 'Language Understanding',
+        //             content:
+        //                 'NLP models are used to evaluate grammar, generate questions, create reading content, and validate written responses from learners.'
+        //         },
+        //         {
+        //             title: ' Feedback Engine',
+        //             subtitle: 'Learning Intelligence',
+        //             content:
+        //                 'An intelligent feedback engine categorizes learner mistakes and provides structured corrections, suggestions, and encouragement.'
+        //         },
+        //         {
+        //             title: 'Audio Processing',
+        //             subtitle: 'Listening & Speaking Exercises',
+        //             content:
+        //                 'Audio processing libraries handle recording, normalization, trimming, and playback. This supports listening exercises and speaking practice.'
+        //         },
+        //         {
+        //             title: 'Vector Search (RAG)',
+        //             subtitle: 'Smart Content Retrieval',
+        //             content:
+        //                 'Vector databases are used to retrieve the most relevant learning feedback, explanations, or video segments based on learner errors.'
+        //         },
+        //         {
+        //             title: 'PostgreSQL',
+        //             subtitle: 'Learning Data Storage',
+        //             content:
+        //                 'PostgreSQL stores learning progress, scores, exercise results, and user activity securely for reporting and improvement.'
+        //         }
+        //     ]
+        // }
         technologyAndModels: {
-            title: 'Technology & AI Models',
+            title: 'Technology & Core Models',
             description:
-                'PY-Learn is an AI-powered learning platform designed for children and students. It focuses on pronunciation, listening, reading, and grammar skills using speech processing, language models, and interactive exercises.',
+                'PY-Learn is an adaptive learning platform designed for children and students. It focuses on pronunciation, listening, reading, and grammar skills using speech processing, language analysis, and interactive exercises.',
 
             stackCards: [
                 {
@@ -309,15 +377,15 @@ export const WelcomePykaraData = [
                 },
                 {
                     title: 'Python',
-                    subtitle: 'Backend Intelligence',
+                    subtitle: 'Backend Processing',
                     content:
-                        'Python is used as the core backend language. It manages audio processing, AI model execution, content generation, scoring logic, and API responses.'
+                        'Python is used as the core backend language. It manages audio processing, model execution, content generation, scoring logic, and API responses.'
                 },
                 {
                     title: 'Flask',
                     subtitle: 'API & Service Layer',
                     content:
-                        'Flask provides REST APIs that connect the frontend with AI models. It processes audio uploads, generates learning feedback, and returns evaluation results securely.'
+                        'Flask provides REST APIs that connect the frontend with backend models. It processes audio uploads, generates learning feedback, and returns evaluation results securely.'
                 },
                 {
                     title: 'Speech-to-Text Models',
@@ -329,19 +397,19 @@ export const WelcomePykaraData = [
                     title: 'Phoneme & IPA Analysis',
                     subtitle: 'Pronunciation Accuracy',
                     content:
-                        'Phoneme-level analysis and IPA comparison are used to identify vowel and consonant errors. This allows precise pronunciation feedback instead of simple correctness checks.'
+                        'Phoneme-level analysis and IPA comparison are used to identify vowel and consonant errors. This allows precise pronunciation feedback instead of basic correctness checks.'
                 },
                 {
-                    title: 'Natural Language Processing',
+                    title: 'Language Processing',
                     subtitle: 'Language Understanding',
                     content:
-                        'NLP models are used to evaluate grammar, generate questions, create reading content, and validate written responses from learners.'
+                        'Language models are used to evaluate grammar, generate questions, create reading content, and validate written responses from learners.'
                 },
                 {
-                    title: 'AI Feedback Engine',
+                    title: 'Feedback Engine',
                     subtitle: 'Learning Intelligence',
                     content:
-                        'An AI-based feedback engine categorizes learner mistakes and provides structured corrections, suggestions, and encouragement.'
+                        'An intelligent feedback engine categorizes learner mistakes and provides structured corrections, helpful suggestions, and encouragement.'
                 },
                 {
                     title: 'Audio Processing',
@@ -353,7 +421,7 @@ export const WelcomePykaraData = [
                     title: 'Vector Search (RAG)',
                     subtitle: 'Smart Content Retrieval',
                     content:
-                        'Vector databases are used to retrieve the most relevant learning feedback, explanations, or video segments based on learner errors.'
+                        'Vector databases retrieve the most relevant learning feedback, explanations, or video segments based on learner responses.'
                 },
                 {
                     title: 'PostgreSQL',
@@ -373,8 +441,8 @@ export const WelcomePykaraData = [
     {
         id: 'py-match',
         title: 'PY-Match',
-        type: 'AI Personality & Compatibility Platform',
-        headline: "An AI-based personality and compatibility analysis",
+        type: 'Intelligent Personality & Compatibility Platform',
+        headline: "Understanding compatibility through personality insights",
         bg: "bg-[#1f5e5e]",
         bg_image: "/assets/portfolio-dy/py-match-dy.png",
         isPOC: true,
@@ -407,7 +475,7 @@ export const WelcomePykaraData = [
         },
 
         summary:
-            'PY-Match is an AI-powered compatibility system designed for relationship and marriage matching. It evaluates users through structured assessments and matches profiles using expectation alignment and personality analysis.',
+            'PY-Match is a compatibility system designed for relationship and marriage matching. It evaluates users through structured assessments and matches profiles using expectation alignment and personality analysis.',
 
         technologyStack: [
             'Python',
@@ -433,7 +501,7 @@ export const WelcomePykaraData = [
         },
 
         keyCapabilities: [
-            'One-time AI-generated personality assessment',
+            'One-Time Structured Personality Assessment',
             'Brain color classification (Red, Green, Blue, Yellow)',
             'Expectation-based compatibility matching',
             'Character-based compatibility analysis',
@@ -473,10 +541,78 @@ export const WelcomePykaraData = [
             primary: 'Request a Demo',
             secondary: 'Try Assessment'
         },
+        // technologyAndModels: {
+        //     title: 'Technology & Models',
+        //     description:
+        //         'PY-Match is an AI-powered personality and compatibility assessment platform. It evaluates user expectations and behavioral traits to generate intelligent compatibility matches using structured scoring and AI-based reasoning.',
+
+        //     stackCards: [
+        //         {
+        //             title: 'Angular',
+        //             subtitle: 'Frontend User Interface',
+        //             content:
+        //                 'Angular is used to build a responsive and interactive user interface. It handles user profiles, assessments, questionnaires, and match visualisation in a clean and secure layout.'
+        //         },
+        //         {
+        //             title: 'Python',
+        //             subtitle: 'Backend Processing',
+        //             content:
+        //                 'Python acts as the core backend language. It manages profile data, scoring logic, AI model execution, and compatibility calculations.'
+        //         },
+        //         {
+        //             title: 'Flask',
+        //             subtitle: 'API & Business Logic Layer',
+        //             content:
+        //                 'Flask provides REST APIs to connect the frontend with AI services. It handles assessment submissions, scoring requests, and match result delivery.'
+        //         },
+        //         {
+        //             title: 'Structured Profile Engine',
+        //             subtitle: 'Expectation & Attribute Mapping',
+        //             content:
+        //                 'A structured profile engine maps user expectations, preferences, and personal attributes into comparable data points for analysis.'
+        //         },
+        //         {
+        //             title: 'LLM-Based Question Generation',
+        //             subtitle: 'Dynamic Assessment',
+        //             content:
+        //                 'Large language models generate situational and personality-based questions dynamically to assess user behavior and thinking patterns.'
+        //         },
+        //         {
+        //             title: 'Brain Color Classification Model',
+        //             subtitle: 'Personality Inference',
+        //             content:
+        //                 'A classification model evaluates assessment responses to identify dominant personality traits using brain color categories such as Red, Green, Yellow, and Blue.'
+        //         },
+        //         {
+        //             title: 'Vector Embeddings',
+        //             subtitle: 'Personality Similarity',
+        //             content:
+        //                 'Text embeddings are used to convert personality descriptions and responses into vectors for similarity comparison and matching.'
+        //         },
+        //         {
+        //             title: 'RAG (Retrieval-Augmented Generation)',
+        //             subtitle: 'Explainable Matching',
+        //             content:
+        //                 'RAG architecture retrieves psychological references and personality guidance to generate explainable compatibility analysis.'
+        //         },
+        //         {
+        //             title: 'Compatibility Scoring Engine',
+        //             subtitle: 'Match Evaluation',
+        //             content:
+        //                 'A weighted scoring system combines expectation match, personality alignment, and behavioral compatibility to rank potential matches.'
+        //         },
+        //         {
+        //             title: 'PostgreSQL',
+        //             subtitle: 'Profile & Match Storage',
+        //             content:
+        //                 'PostgreSQL securely stores user profiles, assessment results, match scores, and compatibility explanations.'
+        //         }
+        //     ]
+        // }
         technologyAndModels: {
-            title: 'Technology & AI Models',
+            title: 'Technology & Models',
             description:
-                'PY-Match is an AI-powered personality and compatibility assessment platform. It evaluates user expectations and behavioral traits to generate intelligent compatibility matches using structured scoring and AI-based reasoning.',
+                'PY-Match is a personality and compatibility assessment platform. It evaluates user expectations and behavioral traits to generate meaningful compatibility matches using structured scoring and rule-based reasoning.',
 
             stackCards: [
                 {
@@ -489,13 +625,13 @@ export const WelcomePykaraData = [
                     title: 'Python',
                     subtitle: 'Backend Processing',
                     content:
-                        'Python acts as the core backend language. It manages profile data, scoring logic, AI model execution, and compatibility calculations.'
+                        'Python acts as the core backend language. It manages profile data, scoring logic, model execution, and compatibility calculations.'
                 },
                 {
                     title: 'Flask',
                     subtitle: 'API & Business Logic Layer',
                     content:
-                        'Flask provides REST APIs to connect the frontend with AI services. It handles assessment submissions, scoring requests, and match result delivery.'
+                        'Flask provides REST APIs to connect the frontend with backend services. It handles assessment submissions, scoring requests, and match result delivery.'
                 },
                 {
                     title: 'Structured Profile Engine',
@@ -504,28 +640,28 @@ export const WelcomePykaraData = [
                         'A structured profile engine maps user expectations, preferences, and personal attributes into comparable data points for analysis.'
                 },
                 {
-                    title: 'LLM-Based Question Generation',
-                    subtitle: 'Dynamic Assessment',
+                    title: 'Dynamic Question Generation',
+                    subtitle: 'Adaptive Assessment',
                     content:
-                        'Large language models generate situational and personality-based questions dynamically to assess user behavior and thinking patterns.'
+                        'Question generation logic creates situational and personality-based questions dynamically to assess user behavior and thinking patterns.'
                 },
                 {
-                    title: 'Brain Color Classification Model',
+                    title: 'Personality Classification Model',
                     subtitle: 'Personality Inference',
                     content:
-                        'A classification model evaluates assessment responses to identify dominant personality traits using brain color categories such as Red, Green, Yellow, and Blue.'
+                        'A classification model evaluates assessment responses to identify dominant personality traits using categories such as Red, Green, Yellow, and Blue.'
                 },
                 {
                     title: 'Vector Embeddings',
                     subtitle: 'Personality Similarity',
                     content:
-                        'Text embeddings are used to convert personality descriptions and responses into vectors for similarity comparison and matching.'
+                        'Text embeddings convert personality descriptions and responses into vectors for similarity comparison and matching.'
                 },
                 {
-                    title: 'RAG (Retrieval-Augmented Generation)',
+                    title: 'Retrieval-Based Explanation System',
                     subtitle: 'Explainable Matching',
                     content:
-                        'RAG architecture retrieves psychological references and personality guidance to generate explainable compatibility analysis.'
+                        'A retrieval-based architecture fetches relevant psychological references and guidance to generate clear and explainable compatibility analysis.'
                 },
                 {
                     title: 'Compatibility Scoring Engine',
@@ -549,8 +685,8 @@ export const WelcomePykaraData = [
     {
         id: 'py-detect',
         title: 'PY-Detect',
-        type: 'AI-Assisted Investigation Platform',
-        headline: "An AI-assisted truth and behaviour analysis",
+        type: 'Intelligent Investigation Platform',
+        headline: "Analysing truth and behaviour through structured signals",
         bg: "bg-[#001219]",
         bg_image: "/assets/portfolio-dy/py-detect-dy.png",
         isPOC: true,
@@ -583,7 +719,7 @@ export const WelcomePykaraData = [
         },
 
         summary:
-            'PY-Detect is an AI-supported investigation tool designed for structured questioning and behavioral assessment. It assists investigators by analyzing voice and response patterns to support decision-making.',
+            'PY-Detect is an investigation tool designed for structured questioning and behavioral assessment. It assists investigators by analyzing voice and response patterns to support decision-making.',
 
         technologyStack: [
             'Python',
@@ -611,7 +747,7 @@ export const WelcomePykaraData = [
         keyCapabilities: [
             'Role-based access for admins and investigators',
             'Case creation and assignment',
-            'AI-generated investigation questions',
+            'System-Generated Investigation Questions',
             'Voice recording and analysis',
             'Behavioral signal scoring',
             'Truth probability estimation',
@@ -642,48 +778,122 @@ export const WelcomePykaraData = [
             'Video-based behavior analysis',
             'Advanced emotion detection',
             'Court-ready reporting formats',
-            'AI confidence scoring improvements'
+            'Enhanced Confidence Scoring'
         ],
 
         cta: {
             primary: 'Request a Demo',
             secondary: 'View Workflow'
         },
+        // technologyAndModels: {
+        //     title: 'Technology & Models',
+        //     description:
+        //         'PY-Detect is an AI-assisted investigation and behavioral analysis platform. It supports structured case management, intelligent questioning, voice and video analysis, and multi-layer AI evaluation to assist investigators.',
+
+        //     stackCards: [
+        //         {
+        //             title: 'Angular',
+        //             subtitle: 'Frontend Investigation Dashboard',
+        //             content:
+        //                 'Angular is used to build a secure and role-based investigation interface. It supports case management, evidence viewing, recordings, and AI-generated analysis in a clean dashboard layout.'
+        //         },
+        //         {
+        //             title: 'Python',
+        //             subtitle: 'Backend Intelligence Engine',
+        //             content:
+        //                 'Python is the core backend language. It manages case workflows, AI model execution, audio and video processing, and structured analysis logic.'
+        //         },
+        //         {
+        //             title: 'Flask',
+        //             subtitle: 'API & Workflow Layer',
+        //             content:
+        //                 'Flask provides REST APIs that connect the frontend with AI services. It handles case creation, evidence submission, recording uploads, and analysis responses securely.'
+        //         },
+        //         {
+        //             title: 'Role-Based Access Control',
+        //             subtitle: 'Security & Permissions',
+        //             content:
+        //                 'Role-based access control ensures that administrators and investigators only access permitted cases, data, and analysis results.'
+        //         },
+        //         {
+        //             title: 'Speech-to-Text Models',
+        //             subtitle: 'Statement Transcription',
+        //             content:
+        //                 'Speech-to-text models are used to convert recorded suspect statements into text. This enables content analysis, questioning logic, and behavioral evaluation.'
+        //         },
+        //         {
+        //             title: 'Voice Analysis Models',
+        //             subtitle: 'Tone & Stress Detection',
+        //             content:
+        //                 'Voice analysis models evaluate tone, speaking speed, pauses, and stress indicators to identify emotional and behavioral changes during questioning.'
+        //         },
+        //         {
+        //             title: 'Computer Vision Models',
+        //             subtitle: 'Facial & Body Analysis',
+        //             content:
+        //                 'Computer vision models analyze facial expressions, eye movement, and body posture from recorded videos to detect behavioral cues.'
+        //         },
+        //         {
+        //             title: 'Large Language Models',
+        //             subtitle: 'AI Question Generation',
+        //             content:
+        //                 'Large language models generate intelligent, context-aware questions based on case data and previous answers to support structured investigations.'
+        //         },
+        //         {
+        //             title: 'RAG (Retrieval-Augmented Generation)',
+        //             subtitle: 'Context-Aware Intelligence',
+        //             content:
+        //                 'RAG architecture retrieves relevant case facts, evidence, and psychological guidelines to improve the accuracy of AI-generated questions and analysis.'
+        //         },
+        //         {
+        //             title: 'Multi-Score Evaluation Engine',
+        //             subtitle: 'Truth Probability Scoring',
+        //             content:
+        //                 'A scoring engine combines voice analysis, video analysis, and language evaluation to generate individual and combined truth probability percentages.'
+        //         },
+        //         {
+        //             title: 'PostgreSQL',
+        //             subtitle: 'Case & Evidence Storage',
+        //             content:
+        //                 'PostgreSQL stores case details, recordings, AI outputs, and investigation logs securely with full traceability.'
+        //         }
+        //     ]
+        // }
         technologyAndModels: {
-            title: 'Technology & AI Models',
+            title: 'Technology & Models',
             description:
-                'PY-Detect is an AI-assisted investigation and behavioral analysis platform. It supports structured case management, intelligent questioning, voice and video analysis, and multi-layer AI evaluation to assist investigators.',
+                'PY-Detect is an assisted investigation and behavioral analysis platform. It supports structured case management, guided questioning, voice and video analysis, and multi-layer evaluation to assist investigators.',
 
             stackCards: [
                 {
                     title: 'Angular',
                     subtitle: 'Frontend Investigation Dashboard',
                     content:
-                        'Angular is used to build a secure and role-based investigation interface. It supports case management, evidence viewing, recordings, and AI-generated analysis in a clean dashboard layout.'
+                        'Angular is used to build a secure and role-based investigation interface. It supports case management, evidence viewing, recordings, and system-generated analysis in a clean dashboard layout.'
                 },
                 {
                     title: 'Python',
-                    subtitle: 'Backend Intelligence Engine',
+                    subtitle: 'Backend Processing Engine',
                     content:
-                        'Python is the core backend language. It manages case workflows, AI model execution, audio and video processing, and structured analysis logic.'
+                        'Python is the core backend language. It manages case workflows, model execution, audio and video processing, and structured analysis logic.'
                 },
                 {
                     title: 'Flask',
                     subtitle: 'API & Workflow Layer',
                     content:
-                        'Flask provides REST APIs that connect the frontend with AI services. It handles case creation, evidence submission, recording uploads, and analysis responses securely.'
+                        'Flask provides REST APIs that connect the frontend with backend services. It handles case creation, evidence submission, recording uploads, and analysis responses securely.'
                 },
                 {
                     title: 'Role-Based Access Control',
                     subtitle: 'Security & Permissions',
                     content:
-                        'Role-based access control ensures that administrators and investigators only access permitted cases, data, and analysis results.'
+                        'Role-based access control ensures that administrators and investigators can access only permitted cases, data, and analysis results.'
                 },
                 {
                     title: 'Speech-to-Text Models',
                     subtitle: 'Statement Transcription',
                     content:
-                        'Speech-to-text models are used to convert recorded suspect statements into text. This enables content analysis, questioning logic, and behavioral evaluation.'
+                        'Speech-to-text models convert recorded statements into text. This enables content review, questioning logic, and behavioral evaluation.'
                 },
                 {
                     title: 'Voice Analysis Models',
@@ -698,16 +908,16 @@ export const WelcomePykaraData = [
                         'Computer vision models analyze facial expressions, eye movement, and body posture from recorded videos to detect behavioral cues.'
                 },
                 {
-                    title: 'Large Language Models',
-                    subtitle: 'AI Question Generation',
+                    title: 'Context-Based Question Generation',
+                    subtitle: 'Structured Questioning',
                     content:
-                        'Large language models generate intelligent, context-aware questions based on case data and previous answers to support structured investigations.'
+                        'Question generation logic creates context-aware questions based on case data and previous responses to support structured investigations.'
                 },
                 {
-                    title: 'RAG (Retrieval-Augmented Generation)',
-                    subtitle: 'Context-Aware Intelligence',
+                    title: 'Retrieval-Based Analysis System',
+                    subtitle: 'Context-Aware Evaluation',
                     content:
-                        'RAG architecture retrieves relevant case facts, evidence, and psychological guidelines to improve the accuracy of AI-generated questions and analysis.'
+                        'A retrieval-based architecture fetches relevant case facts, evidence, and behavioral guidelines to improve the accuracy of system-generated questions and analysis.'
                 },
                 {
                     title: 'Multi-Score Evaluation Engine',
@@ -719,7 +929,7 @@ export const WelcomePykaraData = [
                     title: 'PostgreSQL',
                     subtitle: 'Case & Evidence Storage',
                     content:
-                        'PostgreSQL stores case details, recordings, AI outputs, and investigation logs securely with full traceability.'
+                        'PostgreSQL securely stores case details, recordings, analysis outputs, and investigation logs with full traceability.'
                 }
             ]
         }

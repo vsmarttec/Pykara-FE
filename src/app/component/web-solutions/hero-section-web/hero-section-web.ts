@@ -2,11 +2,13 @@
 
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProcessWorkflow } from '../process-workflow/process-workflow';
 
 interface LayoutSample {
   image: string;
   title: string;
   category: string;
+  href?: string
 }
 
 interface Service {
@@ -29,20 +31,20 @@ interface Service {
 @Component({
   selector: 'app-hero-section-web',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ProcessWorkflow],
   templateUrl: './hero-section-web.html',
   styleUrls: ['./hero-section-web.css']
 })
 export class HeroSectionWeb implements OnInit {
   layoutSamples: LayoutSample[] = [
-    { image: '/assets/we-solutions/Sample4-2.jpg', title: 'E-commerce Platform', category: 'Web Application' },
-    { image: '/assets/we-solutions/Sample5-2.jpg', title: 'Learning Management', category: 'E-learning' },
-    { image: '/assets/we-solutions/Sample6-1.jpg', title: 'Financial Dashboard', category: 'Fintech' },
-    { image: '/assets/we-solutions/Sample7-1.jpg', title: 'Healthcare Portal', category: 'Healthcare' },
-    { image: '/assets/we-solutions/Sample8-1.jpg', title: 'Real Estate Platform', category: 'Property Tech' },
-    { image: '/assets/we-solutions/Sample9-1.jpg', title: 'AI Analytics Dashboard', category: 'AI/ML' },
-    { image: '/assets/we-solutions/Sample10-1.jpg', title: 'CRM System', category: 'Business Software' },
-    { image: '/assets/we-solutions/Sample11-1.jpg', title: 'Travel Booking', category: 'Travel Tech' }
+    { image: '/assets/we-solutions/Sample4-2.jpg', title: 'Lasresan - Teachers Web', category: 'E-learning', href: 'https://youtu.be/I3F3ZGQRuKw?si=Jvce4izttyn0y4CN' },
+    { image: '/assets/we-solutions/Sample5-2.jpg', title: 'Lasresan - Students Web', category: 'E-learning', href: "https://youtu.be/EJmhBY0ZrcM?si=RbaElydm0QYE52lm" },
+    { image: '/assets/we-solutions/Sample6-1.jpg', title: 'Math - Teachers Web ', category: 'E-learning', href: "https://youtu.be/YRdOmIhASFc?si=gOGv5dguYqqbXNF-" },
+    { image: '/assets/we-solutions/Sample7-1.jpg', title: 'Math Student Web ', category: 'E-learning', href: 'https://youtu.be/sIz8ymaTeHw?si=eytgJrKgsBnkajTg' },
+    { image: '/assets/we-solutions/Sample8-1.jpg', title: 'Student Exercise', category: 'E-learning', href: 'https://youtu.be/m7msZ_dX-Xc?si=t-Lhz1iNPRXqiVGS' },
+    { image: '/assets/we-solutions/Sample9-1.jpg', title: 'Learn English', category: 'E-learning', href: 'https://youtu.be/DDiLHizVIj0?si=FJ_nRzbJ9qy8d3JA' },
+    { image: '/assets/hero/e-commerce.png', title: 'E-commerce', category: 'Web Application', href: "https://youtu.be/X0LZCPkZSN4?si=vrcsZ6ElNPBvbHET" },
+    { image: '/assets/poc/Py-trade/7.JPG', title: 'AI-Powered Trading & Investment', category: 'Software', href: 'https://youtu.be/FOeqbu8dfwU?si=RVbCpKhPEsSpOTao' }
   ];
 
   services: Service[] = [
@@ -110,7 +112,7 @@ export class HeroSectionWeb implements OnInit {
       title: 'Website Maintenance & Support',
       description: 'We keep your existing website secure, fast, and available—whether it was built by us or another vendor. Our team works under a defined SLA and supports any mainstream stack and hosting (Azure, AWS, on-premises). We handle fixes, updates, monitoring, and enhancements so your site runs smoothly with minimal downtime.',
       image: '/assets/we-solutions/web-soluation.png',
-          benefits: [
+      benefits: [
         'A scalable and secure web application built for long-term use.',
         'Clean, accessible user interface with strong performance.',
         'A collaborative development process with clear communication at every stage.'

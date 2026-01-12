@@ -98,7 +98,7 @@ export class AiHero implements OnInit {
     },
     {
       title: 'Model Development',
-      description: 'Build, train, and validate AI models'
+      description: 'Build, train, and validate models'
     },
     {
       title: 'Deployment & Integration',

@@ -32,7 +32,7 @@
         </div>
 
         <!-- Hero Section - Image Left, Content Right -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center mb-20 mx-9">
             <!-- Left Column: Image -->
             <div class="animate-slide-left">
                 <div class="relative rounded-3xl overflow-hidden group">
@@ -59,7 +59,7 @@
 
             <!-- Right Column: Content -->
             <div class="animate-slide-right">
-                <h2 class="text-3xl md:text-4xl font-bold  text-black/80 mb-6 leading-tight">
+                <h2 class="text-3xl md:text-5xl font-bold  text-black/80 mb-6 leading-tight">
                     Building Future-Ready
                     <span class="gradient-text from-blue-600 to-purple-600 bg-clip-text text-transparent">
                         Digital Experiences
@@ -132,7 +132,7 @@
         </div>
 
         <!-- Portfolio Gallery Section -->
-        <div class="mb-20">
+        <div class="mb-20 mx-9">
             <div class="text-center mb-12 animate-fade-in">
                 <h2 class="text-3xl md:text-4xl font-bold text-black/80 mb-4">
                     Our <span class="gradient-text text-transparent">Layout
@@ -152,22 +152,25 @@
                                     bg-gray-100 dark:bg-gray-800 hover:shadow-2xl 
                                     hover:shadow-blue-500/10 dark:hover:shadow-blue-900/20 
                                     transition-all duration-500 hover:-translate-y-2">
-                            <!-- Image -->
-                            <img [src]="sample.image" [alt]="sample.title"
-                                class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                            <a [href]="sample.href" target="_blank">
 
-                            <!-- Overlay -->
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                                <!-- Image -->
+                                <img [src]="sample.image" [alt]="sample.title"
+                                    class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+
+
+                                <!-- Overlay -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent 
                                         opacity-0 group-hover:opacity-100 transition-opacity duration-300 
                                         flex items-end p-4">
-                                <div class="text-white">
-                                    <h4 class="font-bold text-sm">{{ sample.title }}</h4>
-                                    <p class="text-xs text-gray-200 mt-1">{{ sample.category }}</p>
+                                    <div class="text-white">
+                                        <h4 class="font-bold text-sm">{{ sample.title }}</h4>
+                                        <p class="text-xs text-gray-200 mt-1">{{ sample.category }}</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                        
-                            
+                            </a>
+
                         </div>
                     </div>
                 </ng-container>
@@ -188,14 +191,14 @@
             </div>
 
             <!-- Tab Content -->
-            <div class="animate-fade-in">
+            <div class="animate-fade-in mx-9">
                 <ng-container *ngFor="let service of services">
                     <div *ngIf="activeService === service.id"
-                        class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
+                        class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-2 items-center ">
 
                         <!-- Left Column: Content -->
                         <div>
-                            <h3 class="text-2xl md:text-3xl font-bold mb-6 text-black/80 dark:text-white">
+                            <h3 class=" text-2xl md:text-3xl font-bold mb-6 text-black/80 dark:text-white">
                                 {{ service.title }}
                             </h3>
 
@@ -204,47 +207,14 @@
                                     {{ service.description }}
                                 </p>
 
-                                <div *ngIf="service.benefits">
-                                    <h4 class="text-lg font-semibold mb-4 text-black/80 dark:text-white">
-                                        What you get
-                                    </h4>
-                                    <ul class="space-y-3">
-                                        <li *ngFor="let benefit of service.benefits" class="flex items-start gap-3">
-                                            <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="currentColor"
-                                                viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd"
-                                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                            <span class="text-gray-600 dark:text-gray-300">{{ benefit }}</span>
-                                        </li>
-                                    </ul>
-                                </div>
 
-                                <div *ngIf="service.process">
-                                    <h4 class="text-lg font-semibold mb-4 text-white dark:text-white">
-                                        How we work
-                                    </h4>
-                                    <ul class="space-y-4">
-                                        <li *ngFor="let step of service.process" class="flex items-start gap-3">
-                                            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 
-                                                        flex items-center justify-center flex-shrink-0">
-                                                <span class="text-sm font-bold text-blue-600 dark:text-blue-400">{{
-                                                    step.step }}</span>
-                                            </div>
-                                            <div>
-                                                <strong class="text-black/80 ">{{ step.title }}:</strong>
-                                                <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">{{
-                                                    step.description }}</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+
+
                             </div>
                         </div>
 
                         <!-- Right Column: Image -->
-                        <div class="relative mb-auto">
+                        <div class="relative mb-auto w-lg m-auto">
                             <div class="rounded-3xl overflow-hidden group">
                                 <img [src]="service.image" [alt]="service.title"
                                     class="w-full h-auto object-cover rounded-3xl transform transition-transform duration-700 group-hover:scale-105">
@@ -253,6 +223,11 @@
                     </div>
                 </ng-container>
             </div>
+        </div>
+
+        <!-- services Work Flow Component -->
+        <div>
+            <app-process-workflow />
         </div>
 
 
@@ -277,7 +252,8 @@
                     </svg>
                 </div>
                 <h3 class="text-lg font-bold text-gray-900 mb-2">Businesses replacing legacy systems</h3>
-                <p class="text-sm text-gray-600">For organizations moving away from outdated software to improve reliability, security, and performance.</p>
+                <p class="text-sm text-gray-600">For organizations moving away from outdated software to improve
+                    reliability, security, and performance.</p>
             </div>
 
             <div class="text-center">
@@ -288,7 +264,8 @@
                     </svg>
                 </div>
                 <h3 class="text-lg font-bold text-gray-900 mb-2">Companies building internal platforms</h3>
-                <p class="text-sm text-gray-600">For teams developing internal tools to manage operations, workflows, data, or reporting more efficiently.</p>
+                <p class="text-sm text-gray-600">For teams developing internal tools to manage operations, workflows,
+                    data, or reporting more efficiently.</p>
             </div>
 
             <div class="text-center">
@@ -300,7 +277,8 @@
                     </svg>
                 </div>
                 <h3 class="text-lg font-bold text-gray-900 mb-2">Organizations scaling their web products</h3>
-                <p class="text-sm text-gray-600">For product-focused companies preparing their web applications for higher usage, growth, and long-term stability.</p>
+                <p class="text-sm text-gray-600">For product-focused companies preparing their web applications for
+                    higher usage, growth, and long-term stability.</p>
             </div>
         </div>
     </div>

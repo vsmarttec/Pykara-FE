@@ -17,8 +17,8 @@ export const features = [
     },
     {
         icon: Workflow,
-        title: 'AI Workflows & Automation',
-        description: 'Automation that connects AI outputs with systems, approvals, reports, and dashboards.',
+        title: 'Advanced Workflows & Automation',
+        description: 'Automation that connects system outputs with approvals, reports, and dashboards.',
         color: 'text-emerald-600',
         bgColor: 'bg-emerald-50'
     }
