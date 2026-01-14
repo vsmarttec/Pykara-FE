@@ -24,8 +24,8 @@ export const capabilities = [
     },
     {
         icon: Workflow,
-        title: 'AI Automation',
-        description: 'AI-driven workflows that reduce manual work and improve consistency.',
+        title: 'Process Automation ',
+        description: 'Digital workflows that enhance efficiency and operational consistency.',
         color: 'text-amber-600',
         bgColor: 'bg-amber-50'
     }

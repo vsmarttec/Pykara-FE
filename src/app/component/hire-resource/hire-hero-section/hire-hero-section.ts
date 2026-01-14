@@ -172,15 +172,15 @@ export class HireHeroSection implements OnInit {
       title: 'Expert Talent Pool',
       description: 'Our diverse team excels in various technologies and programming languages.',
       features: [
-        'Access experienced developers and engineers across web, backend, cloud, and data-driven projects',
+        'Access experienced developers and engineers across  frontend,   backend, cloud, data-driven  and AI roles such as model developers and model trainers.',
         'Senior-level developers & architects',
         'Full-stack and DevOps experts',
         'Continuously improving development skills',
-        'Ongoing skill development and training'
+
       ],
       stats: [
-        { value: '50+', label: 'Technologies' },
-        { value: '100+', label: 'Experts' }
+        { value: '15+', label: 'Technologies' },
+        { value: '15+', label: 'Experts' }
       ],
       theme: {
         cardHover:
@@ -199,7 +199,8 @@ export class HireHeroSection implements OnInit {
         'No recruitment fees or overhead costs',
         'Flexible engagement models',
         'Transparent pricing',
-        'Pay only for what you need'
+        'Pay only for what you need',
+        'Predictable costs with clear scope and timelines'
       ],
       stats: [
         { value: '40%', label: 'Flexible pricing' },
@@ -222,7 +223,8 @@ export class HireHeroSection implements OnInit {
         'Rapid onboarding process',
         'Agile development methodology',
         'Pre-built components and frameworks',
-        'Continuous deployment pipelines'
+        'Continuous deployment pipelines',
+        'Early risk identification and faster issue resolution'
       ],
       stats: [
         { value: '2x', label: 'Faster delivery cycles' },
@@ -245,7 +247,7 @@ export class HireHeroSection implements OnInit {
         'Work with our team while focusing on business priorities',
         'More time for strategy and customer relationships',
         'Reduced management overhead',
-        'Improved resource allocation',
+        // 'Improved resource allocation',
         'Better return on core activities'
       ],
       theme: {
@@ -267,7 +269,7 @@ export class HireHeroSection implements OnInit {
         '24/7 support and maintenance',
         'Performance optimization'
       ],
-      stats: [{ value: '<24h', label: 'Response Time' }],
+
       theme: {
         cardHover:
           'hover:border-rose-400 dark:hover:border-rose-500/30 hover:shadow-2xl hover:shadow-rose-500/10 dark:hover:shadow-rose-900/20',
@@ -320,7 +322,7 @@ export class HireHeroSection implements OnInit {
     },
     {
       question: 'What technologies do your developers specialize in?',
-      answer: 'Web, backend, cloud, and advanced technologies, selected based on project needs.',
+      answer: ' Web, Frontent, backend, cloud, and advanced technologies, selected based on project needs.',
       open: false
     }
   ];
@@ -329,8 +331,18 @@ export class HireHeroSection implements OnInit {
 
   ngOnInit(): void { }
 
-  toggleFAQ(index: number): void {
+  allExpanded = false;
+
+  toggleFAQ(index: number) {
     this.faqs[index].open = !this.faqs[index].open;
+
+    // Update global state
+    this.allExpanded = this.faqs.every(faq => faq.open);
+  }
+
+  toggleAll() {
+    this.allExpanded = !this.allExpanded;
+    this.faqs.forEach(faq => (faq.open = this.allExpanded));
   }
 
   openContactForm(): void {

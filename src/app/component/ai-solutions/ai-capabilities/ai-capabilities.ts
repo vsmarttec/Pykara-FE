@@ -11,6 +11,6 @@ import { LucideAngularModule, Zap } from 'lucide-angular';
 })
 export class AiCapabilities {
   zap=Zap
-  title = 'AI Capabilities';
+  title = 'Intelligent Application Capabilities';
   capabilities = capabilities
 }

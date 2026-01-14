@@ -51,7 +51,7 @@ export class HeroSectionWeb implements OnInit {
     {
       id: 'custom-development',
       title: 'Custom Web Application Development',
-      description: 'We design and build custom web applications aligned with your business processes and technical goals. Our team combines clear product advice with modern engineering (Angular, .NET Core, SQL Server, Azure) to deliver fast, reliable, and future-ready solutions. We focus on clean UX, responsive design, and performance so your site looks great and works smoothly on every device.',
+      description: 'We design and build custom web applications aligned with your business processes and technical goals. Our team combines clear product advice with modern engineering  to deliver fast, reliable, and future-ready solutions. We focus on clean UX, responsive design, and performance so your site looks great and works smoothly on every device.',
       image: '/assets/we-solutions/unnamed.png',
       benefits: [
         'A scalable and secure web application built for long-term use.',
@@ -67,9 +67,9 @@ export class HeroSectionWeb implements OnInit {
       ]
     },
     {
-      id: 'website-redesign',
-      title: 'Website Redesign & Modernization',
-      description: 'We modernise legacy websites so they look current, load fast, and are easy to grow. Our team upgrades old stacks to Angular and .NET Core, improves UX, and adds new features while keeping your business online.',
+      id: 'web-redesign',
+      title: 'Web Redesign & Modernization',
+      description: 'We modernise legacy web so they look current, load fast, and are easy to grow. Our team upgrades old stacks to new stacks, improves UX, and adds new features while keeping your business online. We also ensure better security, maintainability, and long-term scalability for your platform. In addition, we follow clean code practices and industry standards to ensure long-term reliability.',
       image: '/assets/we-solutions/Website-Redesign.png',
       benefits: [
         'A scalable and secure web application built for long-term use.',
@@ -109,8 +109,8 @@ export class HeroSectionWeb implements OnInit {
     },
     {
       id: 'maintenance-support',
-      title: 'Website Maintenance & Support',
-      description: 'We keep your existing website secure, fast, and available—whether it was built by us or another vendor. Our team works under a defined SLA and supports any mainstream stack and hosting (Azure, AWS, on-premises). We handle fixes, updates, monitoring, and enhancements so your site runs smoothly with minimal downtime.',
+      title: 'Maintenance & Support',
+      description: 'We keep your existing app secure, fast, and available whether it was built by us or another vendor. We support all major technology stacks and hosting platforms, ensuring stable performance. Our team helps improve reliability over time through regular reviews and improvements. We handle fixes, updates, monitoring, and enhancements so your site runs smoothly with minimal downtime.',
       image: '/assets/we-solutions/web-soluation.png',
       benefits: [
         'A scalable and secure web application built for long-term use.',

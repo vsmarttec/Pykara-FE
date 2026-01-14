@@ -10,7 +10,7 @@ import { CheckCircle, LucideAngularModule, Shield } from 'lucide-angular';
   styleUrl: './responsible-ai.css',
 })
 export class ResponsibleAi {
-  title = 'Responsible AI Practices';
+  title = 'Trusted System Design Practices';
   practices = practices
   checkCircle = CheckCircle
   shield = Shield

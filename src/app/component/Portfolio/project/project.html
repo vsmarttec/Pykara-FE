@@ -24,11 +24,11 @@
                 Our Portfolio
             </div>
 
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-black/80">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-6xl font-bold mb-4 md:mb-6 text-black/80">
                 Projects <span class="gradient-text">Gallery</span>
             </h1>
 
-            <p class="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed mb-6 md:mb-8 px-4">
+            <p class="text-base md:text-md text-gray-600 leading-relaxed mb-6 md:mb-8 px-4">
                 A selection of products and solutions we have designed, built, and deployed for real-world use cases.
             </p>
 
@@ -38,8 +38,8 @@
         </div>
 
         <!-- AI Projects -->
-        <div class="py-6 md:py-10">
-            <p class="text-2xl sm:text-3xl md:text-4xl text-black/80 font-bold text-center">
+        <div class="py-6 md:py-5">
+            <p class="text-2xl sm:text-3xl md:text-5xl text-black/80 font-bold text-center">
                 AI <span class="gradient-text">Projects</span>
             </p>
             <div class="text-center pt-2 md:pt-4 text-sm md:text-base px-4">
@@ -55,7 +55,7 @@
                 <div class="group animate-slide-up" [style.animation-delay]="i * 50 + 'ms'">
                     <div>
 
-                        <div class="relative aspect-video overflow-hidden bg-gray-100">
+                        <div class="relative aspect-video overflow-hidden bg-gray-100 rounded-2xl">
                             <img [src]="project.image.src"
                                 class=" inset-0 w-full h-full object-cover  transition-transform duration-500" />
 
@@ -100,8 +100,8 @@
 
         <!-- Portfolio Section -->
         <div class="text-center mb-8 md:mb-10 px-4">
-            <h1 class="text-black/80 text-2xl sm:text-3xl md:text-4xl mb-2">
-                Our <span class="gradient-text">Projects</span>
+            <h1 class="text-black/80 text-2xl font-bold sm:text-3xl md:text-5xl mb-2">
+                Other <span class="gradient-text">Projects</span>
             </h1>
             <p class="pt-2 md:pt-4 text-sm md:text-base">
                 These samples represent the type of work we have delivered across multiple client projects.
@@ -109,15 +109,29 @@
         </div>
 
         <!-- Filters - Improved Responsive -->
-        <div class="flex flex-wrap justify-center gap-2 md:gap-3 my-8 md:my-12 px-4">
-            <button *ngFor="let filter of filters" (click)="setActiveFilter(filter.id)"
-                class="px-3 py-2 md:px-5 md:py-2.5 lg:px-6 lg:py-3 rounded-full text-xs md:text-sm font-medium transition-all whitespace-nowrap"
-                [ngClass]="{
-                        'gradient-btns text-white': activeFilter === filter.id,
-                        'bg-white text-gray-700 border border-gray-200': activeFilter !== filter.id
-                    }">
-                {{ filter.name }}
-            </button>
+
+        <div class="flex items-center justify-between">
+
+            <div class="flex flex-wrap justify-center gap-2 md:gap-3 my-8 md:my-12 px-4">
+                <!-- <button *ngFor="let filter of filters" (click)="setActiveFilter(filter.id)"
+                    class="px-3 py-2 md:px-5 md:py-2.5 lg:px-6 lg:py-3 rounded-full text-xs md:text-sm font-medium transition-all whitespace-nowrap"
+                    [ngClass]="{
+                            'gradient-btns text-white': activeFilter === filter.id,
+                            'bg-white text-gray-700 border border-gray-200': activeFilter !== filter.id
+                        }">
+                    {{ filter.name }}
+                </button> -->
+
+                <!-- <h5> Project</h5> -->
+
+            </div>
+            <div>
+                <button (click)="viewAllProjects()" class="px-6 py-3 md:px-8 md:py-4 gradient-btns 
+                                       text-white font-semibold rounded-xl hover:bg-white/20 
+                                       hover:border-white/50 transition-all duration-300 text-sm md:text-base">
+                    View All Projects
+                </button>
+            </div>
         </div>
 
         <!-- ✅ RESPONSIVE GRID FIX (PORTFOLIO) -->
@@ -189,11 +203,7 @@
                             Contact Us
                         </button>
 
-                        <button (click)="viewAllProjects()" class="px-6 py-3 md:px-8 md:py-4 gradient-btns 
-                                       text-white font-semibold rounded-xl hover:bg-white/20 
-                                       hover:border-white/50 transition-all duration-300 text-sm md:text-base">
-                            View All Projects
-                        </button>
+                       
                     </div>
                 </div>
             </div>

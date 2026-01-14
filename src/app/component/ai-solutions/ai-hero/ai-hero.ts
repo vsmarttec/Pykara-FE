@@ -76,7 +76,7 @@ export class AiHero implements OnInit {
     },
     {
       icon: '🤖',
-      title: 'AI Automation',
+      title: 'Process Automation Solutions',
       description: 'Intelligent process automation and optimization',
       features: [
         'Workflow automation',

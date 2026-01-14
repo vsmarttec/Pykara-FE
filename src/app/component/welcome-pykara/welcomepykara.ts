@@ -3,183 +3,6 @@
 
 export const WelcomePykaraData = [
 
-    {
-        id: 'py-trade',
-        title: 'PY-Trade',
-        type: 'Predictive Market Analysis Platform',
-        headline: "Market intelligence for smarter trading decisions",
-        bg: "bg-[#041e51]",
-        bg_image: "/assets/portfolio-dy/PyTrade-dy.png",
-        isPOC: true,
-        url: "https://pykara-py-trade.static.hf.space/",
-        href: "/portfolio/py-trade",
-        slug: "py-trade",
-        image: {
-            src: "/assets/py-trade-3.jpg",
-            alt: "Py-Trade product image"
-        },
-
-        latestproduct: {
-            name: "PY-Detect",
-            Subtitle: "AI-Assisted Investigation Platform",
-            img: "/assets/portfolio-dy/py-detect-dy.png", href: "/portfolio/py-detect"
-        },
-        images: [
-            { src: '/assets/poc/Py-trade/4.JPG', alt: 'Product view 1' },
-            { src: '/assets/poc/Py-trade/7.JPG', alt: 'Product view 2' },
-            { src: '/assets/poc/Py-trade/8.JPG', alt: 'Product view 3' },
-            { src: '/assets/poc/Py-trade/10.JPG', alt: 'Product view 4' },
-            { src: '/assets/poc/Py-trade/13.JPG', alt: 'Product view 5' },
-            { src: '/assets/poc/Py-trade/15.JPG', alt: 'Product view 5' },
-            { src: '/assets/poc/Py-trade/18.JPG', alt: 'Product view 5' }
-        ],
-        hero: {
-            title: 'PY-Trade',
-            subtitle: ' AI-powered trading platform that combines live market data, technical indicators, machine learning models, and news sentiment analysis to help traders make clear and data-driven decisions.',
-            description:
-                'A data-driven trading intelligence platform that evaluates markets using technical indicators, patterns, and AI-based scoring.'
-        },
-
-        summary:
-            'PY-Trade is a stock market analysis system focused on short-term and swing trading. It combines technical indicators, pattern recognition, and weighted scoring to generate clear Buy, Sell, or Neutral signals.',
-
-        technologyStack: [
-            'Python',
-            'Flask',
-            'Angular',
-            'Pandas',
-            'TA-Lib',
-            'Scikit-learn',
-            'PostgreSQL'
-        ],
-
-        aiArchitecture: {
-            modelsUsed: [
-                'Technical indicator scoring models',
-                'Pattern recognition logic',
-                'Machine learning models for trend evaluation'
-            ],
-            intelligenceLogic: [
-                'Rule-based trading strategies',
-                'Weighted signal aggregation',
-                'Optional ML-based prediction models'
-            ]
-        },
-
-        keyCapabilities: [
-            'Technical indicator-based signal generation',
-            'Candlestick pattern detection',
-            'Support and resistance analysis',
-            'Multi-timeframe evaluation',
-            'Weighted technical scoring system',
-            'Short-term swing trading focus',
-            'Signal export and reporting'
-        ],
-
-        teacherFeatures: [],
-
-        integrationAndDeployment: {
-            deploymentOptions: [
-                'Cloud deployment',
-                'Private VPS deployment'
-            ],
-            integrations: [
-                'Market data APIs',
-                'Custom trading dashboards'
-            ]
-        },
-
-        privacyAndSecurity: [
-            'No user trading execution',
-            'Read-only market analysis',
-            'Secure API access',
-            'User-level data isolation'
-        ],
-
-        roadmap: [
-            'Fundamental analysis integration',
-            'News sentiment scoring',
-            'Predictive Price Forecasting',
-            'Broker API read-only integration'
-        ],
-
-        cta: {
-            primary: 'Request a Demo',
-            secondary: 'View Signals'
-        },
-        technologyAndModels: {
-            title: 'Technology Stack & Models',
-            description:
-                'PY-Trade is built using a modern web stack and analytical models designed for reliable short-term market analysis. The system combines backend processing, frontend visualization, technical analysis, and data-driven intelligence.',
-
-            stackCards: [
-                {
-                    title: 'Angular',
-                    subtitle: 'Frontend Application',
-                    content:
-                        'Angular is used to build a responsive and interactive user interface. It allows users to explore market data, indicators, and trading signals through a clean and intuitive dashboard.'
-                },
-                {
-                    title: 'Python',
-                    subtitle: 'Backend Processing',
-                    content:
-                        'Python acts as the core backend language. It manages market data handling, indicator calculations, model execution, and signal generation.'
-                },
-                {
-                    title: 'Flask',
-                    subtitle: 'REST API Layer',
-                    content:
-                        'Flask is used to create lightweight and secure APIs. It connects the frontend with analysis engines and delivers structured trading insights in real time.'
-                },
-                {
-                    title: 'Pandas & NumPy',
-                    subtitle: 'Market Data Processing',
-                    content:
-                        'Pandas and NumPy are used for data cleaning, transformation, and time-series analysis. They ensure accurate calculations for indicators and model inputs.'
-                },
-                {
-                    title: 'TA-Lib',
-                    subtitle: 'Technical Analysis Engine',
-                    content:
-                        'TA-Lib is used to calculate technical indicators such as RSI, MACD, EMA, Bollinger Bands, ADX, ATR, Pivot Points, and Fibonacci levels.'
-                },
-                {
-                    title: 'Machine Learning Models',
-                    subtitle: 'Trend Evaluation',
-                    content:
-                        'Machine learning models such as Random Forest, Gradient Boosting, Decision Tree, Linear Regression, and LSTM are used to evaluate trends and assist in short-term price prediction.'
-                },
-                {
-                    title: 'Scoring & Strategy Engine',
-                    subtitle: 'Trading Intelligence',
-                    content:
-                        'A weighted scoring system combines multiple technical indicators, pattern recognition, and optional predictive models to generate Buy, Sell, or Neutral signals.'
-                },
-                {
-                    title: 'PostgreSQL',
-                    subtitle: 'Data Storage',
-                    content:
-                        'PostgreSQL is used to store historical market data, analysis results, scoring outputs, and signal reports securely.'
-                },
-                {
-                    title: 'FUNDAMENTAL ANALYSIS',
-                    subtitle: 'Company Financial Strength Evaluation',
-                    content:
-                        'PY-Trade evaluates the financial health of companies using key fundamental metrics.It analyses earnings growth, revenue growth, debt- to - equity ratio, P/E ratio, and free cash flow.These fundamentals are combined with technical and news signals to support balanced and informed trading decisions.'
-                }
-                ,
-                {
-                    title: 'NEWS SENTIMENT ANALYSIS',
-                    subtitle: 'Data-Driven Market News Insights',
-                    content:
-                        'PY-Trade analyses financial news articles related to selected stocks and markets.Models evaluate the overall sentiment of each article as positive, negative, or neutral and measure its short-term impact on price movement.This helps traders understand how news may influence market behaviour beyond charts and indicators.'
-                }
-            ]
-        }
-
-    }
-    ,
-
 
     {
         id: 'py-learn',
@@ -433,6 +256,182 @@ export const WelcomePykaraData = [
         }
 
     },
+    {
+        id: 'py-trade',
+        title: 'PY-Trade',
+        type: 'Predictive Market Analysis Platform',
+        headline: "Market intelligence for smarter trading decisions",
+        bg: "bg-[#041e51]",
+        bg_image: "/assets/portfolio-dy/PyTrade-dy.png",
+        isPOC: true,
+        url: "https://pykara-py-trade.static.hf.space/",
+        href: "/portfolio/py-trade",
+        slug: "py-trade",
+        image: {
+            src: "/assets/py-trade-3.jpg",
+            alt: "Py-Trade product image"
+        },
+
+        latestproduct: {
+            name: "PY-Detect",
+            Subtitle: "AI-Assisted Investigation Platform",
+            img: "/assets/portfolio-dy/py-detect-dy.png", href: "/portfolio/py-detect"
+        },
+        images: [
+            { src: '/assets/poc/Py-trade/4.JPG', alt: 'Product view 1' },
+            { src: '/assets/poc/Py-trade/7.JPG', alt: 'Product view 2' },
+            { src: '/assets/poc/Py-trade/8.JPG', alt: 'Product view 3' },
+            { src: '/assets/poc/Py-trade/10.JPG', alt: 'Product view 4' },
+            { src: '/assets/poc/Py-trade/13.JPG', alt: 'Product view 5' },
+            { src: '/assets/poc/Py-trade/15.JPG', alt: 'Product view 5' },
+            { src: '/assets/poc/Py-trade/18.JPG', alt: 'Product view 5' }
+        ],
+        hero: {
+            title: 'PY-Trade',
+            subtitle: ' AI-powered trading platform that combines live market data, technical indicators, machine learning models, and news sentiment analysis to help traders make clear and data-driven decisions.',
+            description:
+                'A data-driven trading intelligence platform that evaluates markets using technical indicators, patterns, and AI-based scoring.'
+        },
+
+        summary:
+            'PY-Trade is a stock market analysis system focused on short-term and swing trading. It combines technical indicators, pattern recognition, and weighted scoring to generate clear Buy, Sell, or Neutral signals.',
+
+        technologyStack: [
+            'Python',
+            'Flask',
+            'Angular',
+            'Pandas',
+            'TA-Lib',
+            'Scikit-learn',
+            'PostgreSQL'
+        ],
+
+        aiArchitecture: {
+            modelsUsed: [
+                'Technical indicator scoring models',
+                'Pattern recognition logic',
+                'Machine learning models for trend evaluation'
+            ],
+            intelligenceLogic: [
+                'Rule-based trading strategies',
+                'Weighted signal aggregation',
+                'Optional ML-based prediction models'
+            ]
+        },
+
+        keyCapabilities: [
+            'Technical indicator-based signal generation',
+            'Candlestick pattern detection',
+            'Support and resistance analysis',
+            'Multi-timeframe evaluation',
+            'Weighted technical scoring system',
+            'Short-term swing trading focus',
+            'Signal export and reporting'
+        ],
+
+        teacherFeatures: [],
+
+        integrationAndDeployment: {
+            deploymentOptions: [
+                'Cloud deployment',
+                'Private VPS deployment'
+            ],
+            integrations: [
+                'Market data APIs',
+                'Custom trading dashboards'
+            ]
+        },
+
+        privacyAndSecurity: [
+            'No user trading execution',
+            'Read-only market analysis',
+            'Secure API access',
+            'User-level data isolation'
+        ],
+
+        roadmap: [
+            'Fundamental analysis integration',
+            'News sentiment scoring',
+            'Predictive Price Forecasting',
+            'Broker API read-only integration'
+        ],
+
+        cta: {
+            primary: 'Request a Demo',
+            secondary: 'View Signals'
+        },
+        technologyAndModels: {
+            title: 'Technology Stack & Models',
+            description:
+                'PY-Trade is built using a modern web stack and analytical models designed for reliable short-term market analysis. The system combines backend processing, frontend visualization, technical analysis, and data-driven intelligence.',
+
+            stackCards: [
+                {
+                    title: 'Angular',
+                    subtitle: 'Frontend Application',
+                    content:
+                        'Angular is used to build a responsive and interactive user interface. It allows users to explore market data, indicators, and trading signals through a clean and intuitive dashboard.'
+                },
+                {
+                    title: 'Python',
+                    subtitle: 'Backend Processing',
+                    content:
+                        'Python acts as the core backend language. It manages market data handling, indicator calculations, model execution, and signal generation.'
+                },
+                {
+                    title: 'Flask',
+                    subtitle: 'REST API Layer',
+                    content:
+                        'Flask is used to create lightweight and secure APIs. It connects the frontend with analysis engines and delivers structured trading insights in real time.'
+                },
+                {
+                    title: 'Pandas & NumPy',
+                    subtitle: 'Market Data Processing',
+                    content:
+                        'Pandas and NumPy are used for data cleaning, transformation, and time-series analysis. They ensure accurate calculations for indicators and model inputs.'
+                },
+                {
+                    title: 'TA-Lib',
+                    subtitle: 'Technical Analysis Engine',
+                    content:
+                        'TA-Lib is used to calculate technical indicators such as RSI, MACD, EMA, Bollinger Bands, ADX, ATR, Pivot Points, and Fibonacci levels.'
+                },
+                {
+                    title: 'Machine Learning Models',
+                    subtitle: 'Trend Evaluation',
+                    content:
+                        'Machine learning models such as Random Forest, Gradient Boosting, Decision Tree, Linear Regression, and LSTM are used to evaluate trends and assist in short-term price prediction.'
+                },
+                {
+                    title: 'Scoring & Strategy Engine',
+                    subtitle: 'Trading Intelligence',
+                    content:
+                        'A weighted scoring system combines multiple technical indicators, pattern recognition, and optional predictive models to generate Buy, Sell, or Neutral signals.'
+                },
+                {
+                    title: 'PostgreSQL',
+                    subtitle: 'Data Storage',
+                    content:
+                        'PostgreSQL is used to store historical market data, analysis results, scoring outputs, and signal reports securely.'
+                },
+                {
+                    title: 'FUNDAMENTAL ANALYSIS',
+                    subtitle: 'Company Financial Strength Evaluation',
+                    content:
+                        'PY-Trade evaluates the financial health of companies using key fundamental metrics.It analyses earnings growth, revenue growth, debt- to - equity ratio, P/E ratio, and free cash flow.These fundamentals are combined with technical and news signals to support balanced and informed trading decisions.'
+                }
+                ,
+                {
+                    title: 'NEWS SENTIMENT ANALYSIS',
+                    subtitle: 'Data-Driven Market News Insights',
+                    content:
+                        'PY-Trade analyses financial news articles related to selected stocks and markets.Models evaluate the overall sentiment of each article as positive, negative, or neutral and measure its short-term impact on price movement.This helps traders understand how news may influence market behaviour beyond charts and indicators.'
+                }
+            ]
+        }
+
+    }
+    ,
 
 
 

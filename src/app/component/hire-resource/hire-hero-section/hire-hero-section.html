@@ -1,4 +1,4 @@
-<section class="relative py-16 md:py-24 bg-white overflow-hidden">
+<section class="relative py-16 md:py-24 bg-white overflow-hidden md:px-10">
     <!-- Background Elements -->
     <div class="absolute inset-0 overflow-hidden">
         <div
@@ -15,7 +15,7 @@
 
 
             <div
-                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#006780] dark:bg-white text-white dark:text-white-300 text-sm font-semibold mb-6">
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#006780]  text-white  text-sm font-semibold mb-6">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -28,7 +28,7 @@
                 Why <span class="gradient-text ">Hire
                     Our Experts</span>
             </h1>
-            <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed animate-fade-in-up"
+            <p class="text-md text-gray-600 dark:text-gray-300 leading-relaxed animate-fade-in-up"
                 style="animation-delay: 0.2s">
                 Hire dedicated developers and small teams for reliable delivery and clear communication.
             </p>
@@ -91,7 +91,7 @@
         </div>
 
         <app-engagement-models />
-        <div class="mt-20 md:mt-32">
+        <!-- <div class="mt-20 md:mt-32">
             <h2 class="text-3xl font-bold text-center mb-12 animate-fade-in text-black/80">
                 Frequently Asked Questions
             </h2>
@@ -124,6 +124,62 @@
                     </div>
                 </ng-container>
             </div>
+        </div> -->
+
+        <div class="mt-20 md:mt-32">
+            <h2 class="text-3xl font-bold text-center mb-6 animate-fade-in text-black/80">
+                Frequently Asked Questions
+            </h2>
+
+            <!-- Expand / Collapse All Button -->
+            <!-- <div class="text-end mb-8 max-w-8xl">
+                <button (click)="toggleAll()" class="px-6 py-2 rounded-full text-sm font-medium
+             bg-blue-600 text-white
+             hover:bg-blue-700 transition-all duration-300">
+                    {{ allExpanded ? 'Collapse All' : 'Expand All' }}
+                </button>
+            </div> -->
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <ng-container *ngFor="let faq of faqs; let i = index">
+                    <div class="animate-fade-in-up" [style.animation-delay]="i * 100 + 'ms'">
+                        <div class="bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl
+                 border border-gray-200 dark:border-gray-700/50
+                 hover:border-blue-300 dark:hover:border-blue-500/30
+                 transition-all duration-300">
+                            <!-- Question Button (Always Visible) -->
+                            <button (click)="toggleFAQ(i)" class="w-full px-6 py-4 flex items-center justify-between
+                   text-left focus:outline-none">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                    {{ faq.question }}
+                                </h3>
+
+                                <svg class="w-6 h-6 text-gray-500 dark:text-gray-400
+                     transition-transform duration-300" [class.rotate-180]="faq.open" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+
+                            <!-- Answer Section -->
+                            <div class="overflow-hidden transition-all duration-300 ease-in-out"
+                                [style.maxHeight]="faq.open ? '300px' : '0px'" [class.opacity-100]="faq.open"
+                                [class.opacity-0]="!faq.open">
+                                <div class="px-6 pb-4">
+                                    <p class="text-gray-600 dark:text-gray-300">
+                                        {{ faq.answer }}
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
         </div>
+
+
+
     </div>
 </section>
