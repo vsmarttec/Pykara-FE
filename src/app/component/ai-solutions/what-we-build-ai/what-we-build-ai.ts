@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class WhatWeBuildAi {
   title = 'What We Build with AI';
-  subtitle = 'We design and deliver AI features that work inside real applications. Our focus is on accuracy, reliability, and clear outcomes.'
+  subtitle = 'We design and deliver intelligent features that work inside real applications, with a focus on accuracy, reliability, and clear outcomes.'
   features = features
   principles = principles
 }

@@ -54,7 +54,7 @@ export class FooterComponent implements OnInit {
   // Quick Links
   quickLinks = [
     { name: 'Home', url: '/', icon: this.homeIcon },
-    { name: 'Ai solutions', url: '/ai-solution', icon: this.briefcaseIcon },
+    { name: 'AI solutions', url: '/ai-solution', icon: this.briefcaseIcon },
     { name: 'Portfolio', url: '/portfolio', icon: this.codeIcon },
     { name: 'Hire resource', url: '/hire-resource', icon: this.usersIcon },
     { name: 'Contact', url: '/contact-us', icon: this.messageCircleIcon },

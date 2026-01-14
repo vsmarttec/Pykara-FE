@@ -74,9 +74,9 @@ export class Project implements OnInit {
 
   filters: Filter[] = [
     { id: 'all', name: 'All Projects' },
-    { id: 'web', name: 'Web Development' },
+    // { id: 'web', name: 'Web Development' },
     // { id: 'ai', name: 'AI / ML' },
-    { id: 'mobile', name: 'Mobile Apps' }
+    // { id: 'mobile', name: 'Mobile Apps' }
   ];
 
   activeFilter = 'all';

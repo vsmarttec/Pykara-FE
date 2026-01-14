@@ -11,7 +11,7 @@ import { FlaskRound, LucideAngularModule } from 'lucide-angular';
 })
 export class AiPocsComponent {
   title = 'Our AI Prototypes';
-  subtitle = 'Some of our internal prototypes explore how AI can support learning, analysis, and decision-making.';
+  subtitle = 'Some of our internal prototypes explore how intelligent systems can support learning, analysis, and decision-making.';
   pocs = pocs
-  flaskRound=FlaskRound
+  flaskRound = FlaskRound
 }

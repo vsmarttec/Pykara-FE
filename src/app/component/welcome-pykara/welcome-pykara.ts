@@ -77,7 +77,7 @@ export class WelcomePykara implements AfterViewInit {
           spaceBetween: 24,
         },
         1280: {
-          slidesPerView: 3,
+          slidesPerView: 3.5,
           spaceBetween: 24,
         },
       },

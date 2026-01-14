@@ -4,7 +4,7 @@ export const pocs = [
     {
         icon: BookOpen,
         title: 'PY-Learn',
-        subtitle: 'AI Learning Tools',
+        subtitle: 'Intelligent Learning Tools',
         description: 'AI-assisted reading, grammar support, and pronunciation feedback features.',
         color: 'text-blue-600',
         bgColor: 'bg-blue-50',

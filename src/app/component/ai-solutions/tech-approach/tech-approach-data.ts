@@ -10,7 +10,7 @@ export const technologies = [
     {
         icon: Database,
         title: 'Vector Databases & Embeddings',
-        items: ['Pinecone', 'Weaviate', 'pgvector', 'OpenAI embeddings'],
+        items: ['Pinecone', 'Weaviate', 'pgvector', 'Text Representation Vectors'],
         color: 'text-purple-600'
     },
     {

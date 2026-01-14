@@ -1,30 +1,33 @@
 <app-snow />
-<section
-    class="relative overflow-hidden min-h-screen grid place-items-center bg-gradient-to-br from-gray-900 via-black to-gray-900">
-    <!-- Background elements with your brand colors -->
-    <div class="absolute inset-0 z-0">
-        <!-- Animated gradient orbs with your colors -->
-        <div class="absolute top-10 left-10 w-72 h-72"
-            style="background: #4F7DB8; opacity: 0.15; filter: blur(80px); border-radius: 9999px;"></div>
-        <div class="absolute bottom-10 right-10 w-72 h-72"
-            style="background: #FF3B3F; opacity: 0.15; filter: blur(80px); border-radius: 9999px; animation-delay: 1s;">
-        </div>
-        <div class="absolute top-1/2 left-1/3 w-96 h-96"
-            style="background: #4F7DB8; opacity: 0.1; filter: blur(100px); border-radius: 9999px; animation-delay: 0.5s;">
-        </div>
 
-        <!-- Grid pattern overlay -->
+<section
+    class="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-black to-gray-900">
+
+    <!-- ================= BACKGROUND ================= -->
+    <div class="absolute inset-0 z-0">
+
+        <!-- Gradient orbs -->
+        <div class="absolute top-10 left-10 w-72 h-72 rounded-full blur-[80px]"
+            style="background:#4F7DB8; opacity:0.15;"></div>
+
+        <div class="absolute bottom-10 right-10 w-72 h-72 rounded-full blur-[80px]"
+            style="background:#FF3B3F; opacity:0.15;"></div>
+
+        <div class="absolute top-1/2 left-1/3 w-96 h-96 rounded-full blur-[100px]"
+            style="background:#4F7DB8; opacity:0.1;"></div>
+
+        <!-- Grid overlay -->
         <div class="absolute inset-0"
-            style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzAgMzB2MzBIMHYtMzBoMzB6TTMwIDB2MzBIMFYwaDMwek02MCAzMHYzMEgzMFYzMGgzMHpNNjAgMEwzMCAwIDYwIDMweiIgc3Ryb2tlPSJyZ2JhKDc5LCAxMjUsIDE4NCwgMC4wNSkiIHN0cm9rZS13aWR0aD0iMS41Ii8+PC9nPjwvc3ZnPg==');">
+            style="background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNMzAgMzB2MzBIMHYtMzBoMzB6TTMwIDB2MzBIMFYwaDMwek02MCAzMHYzMEgzMFYzMGgzMHpNNjAgMEwzMCAwIDYwIDMweiIgc3Ryb2tlPSJyZ2JhKDc5LCAxMjUsIDE4NCwgMC4wNSkiIHN0cm9rZS13aWR0aD0iMS41Ii8+PC9nPjwvc3ZnPg==');">
         </div>
     </div>
 
-    <!-- Main content -->
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center top-10">
-        <!-- Badge/Tagline with brand colors -->
+    <!-- ================= CONTENT ================= -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 sm:py-28">
 
+        <!-- Badge -->
         <div
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#006780] dark:bg-white text-white dark:text-white-300 text-sm font-semibold mb-6">
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#006780] text-white text-xs sm:text-sm font-semibold mb-6">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd"
                     d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z"
@@ -33,76 +36,67 @@
             Pykara – Innovating the Future, Today
         </div>
 
-
-        <!-- Main heading with brand gradient -->
-        <h1 class="text-4xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight">
-            <span class="text-white">We build reliable web and AI solutions for </span>
-            <span class="gradient-text pykara-gradient animate-gradient">growing businesses!</span>
-        </h1>Explore Our
+        <!-- Heading -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <span class="text-white block">
+                We build reliable web and AI solutions for
+            </span>
+            <span class="gradient-text pykara-gradient animate-gradient block">
+                growing businesses!
+            </span>
+        </h1>
 
         <!-- Subheading -->
-        <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-
+        <p class="text-base sm:text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             From product development to AI-driven platforms, we help companies launch faster and scale with confidence
         </p>
 
-        <!-- Stats/Highlights with brand colors -->
-        <div class="flex flex-wrap justify-center gap-8 md:gap-12 mb-12">
-            <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                <div class="text-3xl md:text-4xl font-bold mb-2 text-white">50+</div>
-                <div class="text-sm text-gray-400 group-hover:text-white transition-colors">Projects Delivered</div>
+        <!-- Stats -->
+        <div class="flex flex-wrap justify-center gap-5 sm:gap-2 mb-12">
+
+            <div class="text-center transition-transform duration-300 hover:scale-105">
+                <div class="text-3xl md:text-4xl font-bold text-white mb-1">50+</div>
+                <div class="text-sm text-gray-400">Projects Delivered</div>
             </div>
-            <!-- <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                <div class="text-3xl md:text-4xl font-bold mb-2 text-white">100%</div>
-                <div class="text-sm text-gray-400 group-hover:text-white transition-colors">Strong On-time Delivery Record</div>
-            </div> -->
-            <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                <div class="text-3xl md:text-4xl font-bold mb-2 text-white">24/7</div>
-                <div class="text-sm text-gray-400 group-hover:text-white transition-colors">Support</div>
+
+            <div class="text-center transition-transform duration-300 hover:scale-105">
+                <div class="text-3xl md:text-4xl font-bold text-white mb-1">24/7</div>
+                <div class="text-sm text-gray-400">Support</div>
             </div>
-            <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                <div class="text-3xl md:text-4xl font-bold mb-2 text-white">10+</div>
-                <div class="text-sm text-gray-400 group-hover:text-white transition-colors">Years of Delivery Experience
-                </div>
+
+            <div class="text-center transition-transform duration-300 hover:scale-105">
+                <div class="text-3xl md:text-4xl font-bold text-white mb-1">10+</div>
+                <div class="text-sm text-gray-400">Years of Experience</div>
             </div>
+
         </div>
 
-        <!-- CTA Buttons with brand colors -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-
-            <div>
-
-                <button class="gradient-btns-outline ">
-
-                    <a routerLink="/portfolio" class="flex">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
-                        </svg>
-                        View Our Work
-                    </a>
-                </button>
-            </div>
+        <!-- CTA -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <button class="gradient-btns-outline">
+                <a routerLink="/portfolio" class="flex items-center gap-2 px-2 py-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879" />
+                    </svg>
+                    View Our Work
+                </a>
+            </button>
         </div>
 
-
     </div>
 
-    <!-- Floating Tech Elements with brand colors -->
-    <div class="absolute top-20 left-5 animate-float">
-        <div class="w-12 h-12 border-2 rounded-lg rotate-45" style="border-color: rgba(79, 125, 184, 0.3);"></div>
-    </div>
-    <div class="absolute bottom-20 right-5 animate-float-delayed">
-        <div class="w-10 h-10 border-2 rounded-full" style="border-color: rgba(255, 59, 63, 0.3);"></div>
-    </div>
-    <div class="absolute top-40 right-20 animate-pulse-slow">
-        <div class="w-8 h-8 border-2 rounded-lg rotate-12" style="border-color: rgba(79, 125, 184, 0.2);"></div>
+    <!-- ================= FLOATING DECORATIONS (DESKTOP ONLY) ================= -->
+    <div class="hidden md:block absolute top-20 left-5 animate-float">
+        <div class="w-12 h-12 border-2 rounded-lg rotate-45" style="border-color:rgba(79,125,184,0.3);"></div>
     </div>
 
-    <!-- Animated dots pattern -->
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute top-1/4 left-1/4 w-1 h-1 rounded-full" style="background: #4F7DB8; opacity: 0.5;"></div>
-        <div class="absolute top-1/3 right-1/3 w-1 h-1 rounded-full" style="background: #FF3B3F; opacity: 0.5;"></div>
-        <div class="absolute bottom-1/4 left-1/3 w-1 h-1 rounded-full" style="background: #4F7DB8; opacity: 0.5;"></div>
+    <div class="hidden md:block absolute bottom-20 right-5 animate-float-delayed">
+        <div class="w-10 h-10 border-2 rounded-full" style="border-color:rgba(255,59,63,0.3);"></div>
     </div>
+
+    <div class="hidden md:block absolute top-40 right-20 animate-pulse-slow">
+        <div class="w-8 h-8 border-2 rounded-lg rotate-12" style="border-color:rgba(79,125,184,0.2);"></div>
+    </div>
+
 </section>
